@@ -24,8 +24,6 @@ Dessa forma, ele faz a ponte entre quem precisa e a ajuda especializada.
 
 Você pode conferir o protótipo inicial em [Raízes da Cura](https://mentesa.my.canva.site/)
 
-### Telas
-
 #### Início
 
 ![Início](imagens/1-home.png)
