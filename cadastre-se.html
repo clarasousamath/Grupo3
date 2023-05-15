@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raizes da Cura</title>
+</head>
+<body>
+    <header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="artigos.html">Artigos e mais</a></li>
+                    <li><a href="acheajuda.html">Ache ajuda!</a></li>
+                    <li><a href="cadastre-se.html">Cadastre-se</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
+    <main>
+        <img src="./imagens/Logo [Sem Fundo].png" alt="Raizes da Cura" height="200" width="200">
+    <section>
+        <h1>Cadastre-se</h1>
+        <p>Nessa página você pode se cadastrar para obter ajuda individual bem como se tornar 
+        <br>um parceiro-ajudador do site e assim nos ajudar a multiplicar essa idéia
+        <br>que surgiu com intuito de oferecer ajuda à pessoas que passam ou estão passando
+        <br>por transtornos como ansiedade, depressão entre outros.
+        <br>
+        <br>Ao se cadastrar, você tem a opção de escolher o perfil de alguém que precisa de ajuda,
+        <br>bem como se somar nessa luta e se tornar um parceiro-ajudador se dispondo desde a conversar
+        <br>com pessoas que estão passando ou passaram por esses problemas, ou ate mesmo disponibilizar
+        <br>seu contato profissional (Caso seja alguem da área) para que as pessoas da sua comunidade
+        <br>te encontrem através desse site e assim haja um contato direto e presencial para auxilio
+        <br>no tratamento e ajuda dessas pessoas.</p>
+    </section>
+    <section>
+        <h3>Insira seus dados aqui:</h3>
+        <form action="Página de Inserção e Armazenamento de Dados">
+            <fieldset>
+                <div>
+                    <label for="nome">Nome e Sobrenome:</label>
+                    <input type="text" id="nome">
+                </div>
+                <br>
+                <div>
+                    <label for="whatsapp">Whatsapp:</label>
+                    <input type="tel" id="whatsapp">
+                </div>
+                <br>
+                <div>
+                    <label for="aceite-contato">Aceita ser contatado?</label>
+                    <label>
+                        <input type="radio" id="aceite-contato-sim" checked>SIM
+                    </label>
+                    <label>
+                        <input type="radio" id="aceite-contato-nao">NÃO
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="perfil">Selecione o Tipo do Perfil:</label>
+                    <select name="perfil" id="perfil">
+                        <option selected disabled value="">Selecione...</option>
+                        <option value="preciso-de-ajuda">Preciso de Ajuda</option>
+                        <option value="quero-ajuda">Quero ajudar Pessoas</option>
+                        <option value="sou-profissional">Sou um Profissional da Área</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="historia">Conte-nos sua História, deixe sugestões. Esse espaço é pra você!</label>
+                    <br>
+                        <textarea name="historia" id="historia" cols="60" rows="10"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+                </div>
+                <br>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="text">
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox">
+                    <label for="aceite-politicaseprivacidade">Declaro ter lido e aceito os 
+                        <a href="./politicaseprivacidade.html">Termos de uso e Políticas de Privacidade.</a>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Concluir Cadastro</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
