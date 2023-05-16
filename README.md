@@ -75,7 +75,7 @@ Opções de contato com os autores do projeto e políticas de uso e privacidade.
 ## Agradecimentos
 
 * Proz Tecnologia;
-* Professor Luth;
+* Professor [LuthGom](https://github.com/LuthGom);
 * À cada membro do projeto pela dedicação;
 * https://visualhunt.com/
 * https://www.canva.com/
