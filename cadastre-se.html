@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raizes da Cura</title>
 </head>
+
 <body>
     <header>
         <aside>
             <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inicio.html">Inicio</a></li>
                     <li><a href="sobre.html">Sobre Nós</a></li>
                     <li><a href="artigos.html">Artigos e mais</a></li>
                     <li><a href="acheajuda.html">Ache ajuda!</a></li>
@@ -24,93 +26,128 @@
     </header>
     <main>
         <img src="./imagens/Logo [Sem Fundo].png" alt="Raizes da Cura" height="200" width="200">
-    <section>
-        <h1>Cadastre-se</h1>
-        <p>Nessa página você pode se cadastrar para obter ajuda individual bem como se tornar 
-        <br>um parceiro-ajudador do site e assim nos ajudar a multiplicar essa idéia
-        <br>que surgiu com intuito de oferecer ajuda à pessoas que passam ou estão passando
-        <br>por transtornos como ansiedade, depressão entre outros.
-        <br>
-        <br>Ao se cadastrar, você tem a opção de escolher o perfil de alguém que precisa de ajuda,
-        <br>bem como se somar nessa luta e se tornar um parceiro-ajudador se dispondo desde a conversar
-        <br>com pessoas que estão passando ou passaram por esses problemas, ou ate mesmo disponibilizar
-        <br>seu contato profissional (Caso seja alguem da área) para que as pessoas da sua comunidade
-        <br>te encontrem através desse site e assim haja um contato direto e presencial para auxilio
-        <br>no tratamento e ajuda dessas pessoas.</p>
-    </section>
-    <section>
-        <h3>Insira seus dados aqui:</h3>
-        <form action="Página de Inserção e Armazenamento de Dados">
-            <fieldset>
-                <div>
-                    <label for="nome">Nome e Sobrenome:</label>
-                    <input type="text" id="nome">
-                </div>
-                <br>
-                <div>
-                    <label for="whatsapp">Whatsapp:</label>
-                    <input type="tel" id="whatsapp">
-                </div>
-                <br>
-                <div>
-                    <label for="aceite-contato">Aceita ser contatado?</label>
-                    <label>
-                        <input type="radio" id="aceite-contato-sim" checked>SIM
-                    </label>
-                    <label>
-                        <input type="radio" id="aceite-contato-nao">NÃO
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <label for="perfil">Selecione o Tipo do Perfil:</label>
-                    <select name="perfil" id="perfil">
-                        <option selected disabled value="">Selecione...</option>
-                        <option value="preciso-de-ajuda">Preciso de Ajuda</option>
-                        <option value="quero-ajuda">Quero ajudar Pessoas</option>
-                        <option value="sou-profissional">Sou um Profissional da Área</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <label for="historia">Conte-nos sua História, deixe sugestões. Esse espaço é pra você!</label>
-                    <br>
-                        <textarea name="historia" id="historia" cols="60" rows="10"></textarea>
-                </div>
-                <br>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email">
-                </div>
-                <br>
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="text">
-                </div>
-                <br>
-                <div>
-                    <input type="checkbox">
-                    <label for="aceite-politicaseprivacidade">Declaro ter lido e aceito os 
-                        <a href="./politicaseprivacidade.html">Termos de uso e Políticas de Privacidade.</a>
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <button type="submit">Concluir Cadastro</button>
-                </div>
-            </fieldset>
-        </form>
-    </section>
-    <footer>
         <section>
-            <ul>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="politicaseprivacidade.html">Políticas e Privacidade</a></li>
-                <li><a href="politicaseprivacidade.html">Copyright (c) - Raizes da Cura
-                    - Todos os Direitos Reservados
-                </a></li>
-            </ul>
+            <h1>Cadastre-se</h1>
+            <p>Nessa página você pode se cadastrar para obter ajuda individual bem como se tornar
+                <br>um parceiro-ajudador do site e assim nos ajudar a multiplicar essa idéia
+                <br>que surgiu com intuito de oferecer ajuda à pessoas que passam ou estão passando
+                <br>por transtornos como ansiedade, depressão entre outros.
+                <br>
+                <br>Ao se cadastrar, você tem a opção de escolher o perfil de alguém que precisa de ajuda,
+                <br>bem como se somar nessa luta e se tornar um parceiro-ajudador se dispondo desde a conversar
+                <br>com pessoas que estão passando ou passaram por esses problemas, ou ate mesmo disponibilizar
+                <br>seu contato profissional (Caso seja alguem da área) para que as pessoas da sua comunidade
+                <br>te encontrem através desse site e assim haja um contato direto e presencial para auxilio
+                <br>no tratamento e ajuda dessas pessoas.
+            </p>
         </section>
-    </footer>
+        <section>
+            <h3>Insira seus dados aqui:</h3>
+            <form action="Página de Inserção e Armazenamento de Dados" method="post"> 
+                <!-- método post utilizado para os dados do usuário não aparecerem na URL
+                Os campos com required são obrigatórios
+                Name atribuido aos itens "sim" ou "não" para ser possível selecionar apenas uma das opções-->
+                <fieldset>
+                    <div>
+                        <label for="nome">Nome e Sobrenome:* </label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="whatsapp">Whatsapp:* </label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(xx)xxxxx-xxxx" pattern="[0-9]{2}[0-9]{9}">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="aceite-contato">Aceita ser contatado?*</label>
+                        <label>
+                            <input type="radio" name="aceita" id="aceite-contato-sim" checked required>Sim
+                        </label>
+                        <label>
+                            <input type="radio" name="aceita" id="aceite-contato-nao" required>Não
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="perfil">Selecione o Tipo do Perfil:*</label>
+                        <select name="perfil" id="perfil" required>
+                            <option selected disabled hidden value="">Selecione...</option>
+                            <option value="preciso-de-ajuda">Preciso de Ajuda</option>
+                            <option value="quero-ajuda">Quero ajudar Pessoas</option>
+                            <option value="sou-profissional">Sou um Profissional da Área</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="historia">Conte-nos sua História, deixe sugestões. Esse espaço é pra você!*</label>
+                        <br>
+                        <textarea name="historia" id="historia" cols="60" rows="10" required></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">E-mail:*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="senha">Senha:*</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox" required>
+                        <label for="aceite-politicaseprivacidade">
+                            Declaro ter lido e aceito os
+                            <a href="./politicaseprivacidade.html">
+                                Termos de uso e Políticas de Privacidade. *</a>
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit">Concluir Cadastro</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <br/><br/><br/>
+        <footer>
+            <div>
+                <p>Siga-nos!</p>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src=".\imagens\rodape\rodape_instagram_36x36.png" alt="Logo Instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img src=".\imagens\rodape\rodape_twitter_36x36.png"
+                        alt="Logo do Twitter"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img
+                        src=".\imagens\rodape\rodape_facebook_36x36.png" alt="Logo do Facebook"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src=".\imagens\rodape\rodape_linkedin.png"
+                        alt="Logo do LinkedIn"></a>
+            </div>
+            <div>
+                <p class="copyright">&copy; Copyrigth Raízes da Cura</p>
+                <p><a href="politicaseprivacidade.html">Todos os direitos reservados</a></p>
+                <a href="politicaseprivacidade.html">Políticas de Privacidade e Termos de Uso</a>
+            </div>
+            <div>
+                <p>Sugestões, dúvidas ou elogios? <a href="fale-conosco.html">Fale Conosco.</a></p><br />
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">Início</a></li>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="artigos-e-mais.html">Artigos e Mais</a></li>
+                        <li><a href="ache-ajuda.html">Ache Ajuda!</a></li>
+                        <li><a href="cadastre-se.html">Cadastre-se!</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                        <li><a href="creditos-de-imagens-e-outros.html">Créditos de imagens e outros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <div>
+            O Raízes da Cura usa cookies para fins de personalização, publicidade e mais. Saiba mais ou altere suas preferências de
+            cookies. Ao utilizar o serviço do Raízes da Cura, você concorda com o uso de cookies.
+            <a href="#">Fechar</a>
+        </div>
 </body>
+
 </html>
