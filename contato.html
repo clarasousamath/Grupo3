@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+   <section id="contato">
+     <div class="formulario">
+        <h1>Formulário</h1>
+        <p>Este é o nosso formulário de contato</p>
+
+        <form action="post">
+            <label for="wname">Nome: <br>
+                <input type="text" name="name" id="wname" minlength="8" maxlength="12" 
+                 placeholder="Digite seu Nome" required>
+            </label> <br>
+            <label for="wsname">Sobrenome: <br>
+                <input type="text" name="sname" id="wsname" minlength="8" maxlength="12" 
+                 placeholder="Digite seu Sobrenome" required>
+            </label> <br>
+            <label for="wemail">Email: <br>
+                <input type="email" name="email" id="wemail" minlength="15" maxlength="35" 
+                 placeholder="Digite seu melhor Email" autocomplete="email" required>
+            </label> <br>
+            <label for="wphone">Telefone: <br>
+                <input type="tel" name="phone" id="wphone" minlength="8" maxlength="12" 
+                 placeholder="Digite seu telefone" required>
+            </label> <br>
+            <label for="wmsg">Menssagem: 
+                <textarea name="msg" id="wmsg" cols="30" rows="10"></textarea>
+            </label>
+            <br>
+            <button>Enviar</button>
+        </form>
+   </section>
+</body>
+</html>
