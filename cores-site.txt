@@ -1,0 +1,27 @@
+Azul Claro Fundo da Página Home:
+HEX: #dcf7e8
+RGB: 220 247 232
+
+Azul Texto da Página Inicial e Botão CADASTRE-SE:
+HEX: #004aad
+RGB: 0 74 173
+
+Texto em Rosa da Página Inicial:
+HEX: #ef0189
+RGB: 239 1 137
+
+Cor do Texto MENU:
+HEX: #585c5e
+RGB: 88 92 94
+
+Cor do Fundo Geral:
+HEX: #f7fdf3
+RGB: 247 253 243
+
+Cor do Texto mais suave contido em ARTIGOS e ACHE AJUDA:
+HEX: #1b3c60
+RGB: 27 60 96
+
+Cor do Texto página CADASTRE-SE:
+HEX: #545454
+RGB: 84 84 84
