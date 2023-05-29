@@ -51,3 +51,26 @@ header {
 img {
     width: 100%;
 }
+
+/* Estilizando o rodapé */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.redes img {
+    height: 36px;
+    width: 36px;
+}
