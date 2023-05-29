@@ -1,0 +1,53 @@
+/* Estilizando o Menu */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #FEFEFE;;
+    padding: 0 50px;
+    /* Caso queiramos o fundo do menu transparente
+    background-color: #cddadba8;
+    backdrop-filter: blur(40px); */
+}
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 60px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #262b73;
+    padding: 6px 12px;
+}
+
+.menu li a:hover {
+    background-color: #3e46b8;
+    color: white;
+    border-radius: 2em;
+}
+
+img {
+    width: 100%;
+}
