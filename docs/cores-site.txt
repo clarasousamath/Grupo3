@@ -1,4 +1,4 @@
-Azul Claro Fundo da Página Home:
+﻿Azul Claro Fundo da Página Home:
 HEX: #dcf7e8
 RGB: 220 247 232
 
@@ -25,3 +25,7 @@ RGB: 27 60 96
 Cor do Texto página CADASTRE-SE:
 HEX: #545454
 RGB: 84 84 84
+
+Azul Escuro do Botão ACHE-AJUDA e a SELEÇÃO DOS ESTADOS:
+HEX: #004aad
+RGB: 0 74 173
