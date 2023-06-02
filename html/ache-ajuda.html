@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/estilos/ache-ajuda.css">
   <title>Raízes da Cura - Ache Ajuda</title>
 </head>
 
@@ -40,8 +41,9 @@
   <main>
 
     <div>
-      <h1>Ache Ajuda!</h1>
-      <p>O nosso site oferece um amplo leque de recursos para auxiliar na busca por apoio psicológico adequado,
+      <h1 class="title">Ache Ajuda!</h1>
+    </br>
+      <p class="centered-text">O nosso site oferece um amplo leque de recursos para auxiliar na busca por apoio psicológico adequado,
         <br>incluindo opções de locais de apoio e indicação de profissionais especializados.
         <br>Com base na sua escolha de estado brasileiro, fornecemos informações detalhadas sobre os serviços
         <br>disponíveis na sua região, permitindo que você encontre profissionais qualificados e próximos a você.
@@ -61,9 +63,13 @@
         <br>
       </p>
 
-      <h3>De onde podemos te ajudar?(Selecione um estado)</h3>
-    </div>
 
+    </div>
+    <div class="container">
+    <div class="box">
+    <h3 class="subtitle">De onde podemos te ajudar?(Selecione um estado)</h3>
+    </br>
+    </br>
     <label for="selecao">Estado:</label>
 
     <select id="selecao" onchange="atualizarItens()">
@@ -105,6 +111,8 @@
     </select>
 
     <br /><br />
+
+    
 
     <div id="informacoesOpcao"></div>
     <div id="informacoesItem"></div>
@@ -262,7 +270,8 @@
       informacoesItem.innerHTML = "Informações do Local: " + itemSelecionado;
     }
   </script>
-
+</div>
+</div>
   <br /><br /><br />
 
   <footer>
