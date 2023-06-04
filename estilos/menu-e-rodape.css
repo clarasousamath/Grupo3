@@ -48,9 +48,47 @@ header {
     border-radius: 2em;
 }
 
+.menu ul li a ul{
+    float: left;
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+   
+}
+.menu ul ul{
+    margin-top: 10px;
+    display: none;
+    top: 0px;
+    position: absolute;
+}
+.menu ul li ul{
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+    position: absolute;
+    flex-direction: column;
+   
+
+}
+.menu ul li ul li{
+    width: 200px;
+    height: 40px;
+white-space: nowrap;
+margin-right: 30px;
+}
+.menu ul li:hover > ul{
+    padding-top: 50px;
+    display: block;
+    margin-top: 1px;
+}
+
 img {
     width: 100%;
 }
+
 
 /* Estilizando o rodapé */
 
