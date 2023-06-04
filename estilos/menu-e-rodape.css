@@ -10,12 +10,17 @@ header {
     top: 0;
 }
 
+.w-100 {
+    width: 100%;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: #FEFEFE;;
+    background-color: #FEFEFE;
+    ;
     padding: 0 50px;
     /* Caso queiramos o fundo do menu transparente
     background-color: #cddadba8;
@@ -48,7 +53,9 @@ header {
     border-radius: 2em;
 }
 
-.menu ul li a ul{
+/* Estilizando o submenu */
+
+.menu ul li a ul {
     float: left;
     width: 200px;
     height: 40px;
@@ -56,30 +63,31 @@ header {
     text-align: center;
     line-height: 40px;
     font-size: 25px;
-   
 }
-.menu ul ul{
+
+.menu ul ul {
     margin-top: 10px;
     display: none;
     top: 0px;
     position: absolute;
 }
-.menu ul li ul{
+
+.menu ul li ul {
     width: 200px;
     height: 40px;
     margin-right: 10px;
     position: absolute;
     flex-direction: column;
-   
-
 }
-.menu ul li ul li{
+
+.menu ul li ul li {
     width: 200px;
     height: 40px;
-white-space: nowrap;
-margin-right: 30px;
+    white-space: nowrap;
+    margin-right: 30px;
 }
-.menu ul li:hover > ul{
+
+.menu ul li:hover>ul {
     padding-top: 50px;
     display: block;
     margin-top: 1px;
@@ -99,6 +107,29 @@ footer {
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    color: #262b73;
+}
+
+footer a {
+    color: #262b73;
+}
+
+footer a:hover {
+    color: #ef0189;
+}
+
+footer a:active {
+    color: #ef0189;
+}
+
+.fundo-gradiente {
+    padding-top: 3em;
+    background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
+}
+
+footer>p {
+    padding-bottom: 0.5em;
+    font-size: 16px;
 }
 
 .redes {
@@ -111,4 +142,28 @@ footer {
 .redes img {
     height: 36px;
     width: 36px;
+}
+
+div.copyright p {
+    padding-top: 8px;
+}
+
+footer .w-100 p {
+    padding-top: 15px;
+}
+
+nav.mapa-site {
+    display: flex;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+nav.mapa-site>* {
+    width: 33%;
+}
+
+.mapa-site li {
+    margin-bottom: 8px;
 }

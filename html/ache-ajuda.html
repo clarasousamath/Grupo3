@@ -35,8 +35,8 @@
             <li><a href="../html/submenu/ajuda.html">Como você pode ajudar?</a></li>
             <li><a href="../html/submenu/diferenca.html">Qual a diferença de um transtorno para o outro?</a></li>
             <li><a href="../html/submenu/tratar.html">Como fazer o tratamento?</a></li>
-        </ul>
-      </li>
+          </ul>
+        </li>
         <li><a href="ache-ajuda.html">Ache Ajuda!</a></li>
         <li><a href="cadastre-se.html">Cadastre-se!</a></li>
         <li><a href="login.html">Login</a></li>
@@ -49,8 +49,9 @@
 
     <div>
       <h1 class="title">Ache Ajuda!</h1>
-    <br>
-      <p class="centered-text">O nosso site oferece um amplo leque de recursos para auxiliar na busca por apoio psicológico adequado,
+      <br>
+      <p class="centered-text">O nosso site oferece um amplo leque de recursos para auxiliar na busca por apoio
+        psicológico adequado,
         <br>incluindo opções de locais de apoio e indicação de profissionais especializados.
         <br>Com base na sua escolha de estado brasileiro, fornecemos informações detalhadas sobre os serviços
         <br>disponíveis na sua região, permitindo que você encontre profissionais qualificados e próximos a você.
@@ -73,56 +74,56 @@
 
     </div>
     <div class="container">
-    <div class="box">
-    <h3 class="subtitle">De onde podemos te ajudar?(Selecione um estado)</h3>
-    </br>
-    </br>
-    <label for="selecao">Estado:</label>
+      <div class="box">
+        <h3 class="subtitle">De onde podemos te ajudar?(Selecione um estado)</h3>
+        </br>
+        </br>
+        <label for="selecao">Estado:</label>
 
-    <select id="selecao" onchange="atualizarItens()">
-      <option value="">Selecione...</option>
-      <option value="Acre">Acre</option>
-      <option value="Alagoas">Alagoas</option>
-      <option value="Amapá">Amapá</option>
-      <option value="Amazonas">Amazonas</option>
-      <option value="Bahia">Bahia</option>
-      <option value="Ceára">Ceára</option>
-      <option value="Distrito Federal">Distrito Federal</option>
-      <option value="Espírito Santo">Espírito Santo</option>
-      <option value="Goiás">Goiás</option>
-      <option value="Maranhão">Maranhão</option>
-      <option value="Mato Grosso">Mato Grosso</option>
-      <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-      <option value="Minas Gerais">Minas Gerais</option>
-      <option value="Pará">Pará</option>
-      <option value="Paraíba">Paraíba</option>
-      <option value="Paraná">Paraná</option>
-      <option value="Pernambuco">Pernambuco</option>
-      <option value="Piauí">Piauí</option>
-      <option value="Rio de Janeiro">Rio de Janeiro</option>
-      <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-      <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-      <option value="Rondônia">Rondônia</option>
-      <option value="Roraima">Roraima</option>
-      <option value="Santa Catarina">Santa Catarina</option>
-      <option value="São Paulo">São Paulo</option>
-      <option value="Sergipe">Sergipe</option>
-      <option value="Tocantins">Tocantins</option>
+        <select id="selecao" onchange="atualizarItens()">
+          <option value="">Selecione...</option>
+          <option value="Acre">Acre</option>
+          <option value="Alagoas">Alagoas</option>
+          <option value="Amapá">Amapá</option>
+          <option value="Amazonas">Amazonas</option>
+          <option value="Bahia">Bahia</option>
+          <option value="Ceára">Ceára</option>
+          <option value="Distrito Federal">Distrito Federal</option>
+          <option value="Espírito Santo">Espírito Santo</option>
+          <option value="Goiás">Goiás</option>
+          <option value="Maranhão">Maranhão</option>
+          <option value="Mato Grosso">Mato Grosso</option>
+          <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+          <option value="Minas Gerais">Minas Gerais</option>
+          <option value="Pará">Pará</option>
+          <option value="Paraíba">Paraíba</option>
+          <option value="Paraná">Paraná</option>
+          <option value="Pernambuco">Pernambuco</option>
+          <option value="Piauí">Piauí</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+          <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+          <option value="Rondônia">Rondônia</option>
+          <option value="Roraima">Roraima</option>
+          <option value="Santa Catarina">Santa Catarina</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Sergipe">Sergipe</option>
+          <option value="Tocantins">Tocantins</option>
 
-    </select>
+        </select>
 
-    <label for="itens">Locais:</label>
+        <label for="itens">Locais:</label>
 
-    <select id="itens" onchange="exibirInformacoes()">
-      <option value="">Selecione um estado primeiro</option>
-    </select>
+        <select id="itens" onchange="exibirInformacoes()">
+          <option value="">Selecione um estado primeiro</option>
+        </select>
 
-    <br /><br />
+        <br /><br />
 
-    
 
-    <div id="informacoesOpcao"></div>
-    <div id="informacoesItem"></div>
+
+        <div id="informacoesOpcao"></div>
+        <div id="informacoesItem"></div>
 
   </main>
 
@@ -277,11 +278,11 @@
       informacoesItem.innerHTML = "Informações do Local: " + itemSelecionado;
     }
   </script>
-</div>
-</div>
+  </div>
+  </div>
   <br /><br /><br />
 
-  <footer>
+  <footer class="fundo-gradiente">
     <p>Siga-nos!</p>
     <div class="redes">
       <a href="https://www.instagram.com/" target="_blank"><img src="../imagens/rodape/instagram.svg"
@@ -292,34 +293,43 @@
       <a href="https://www.linkedin.com/" target="_blank"><img src="../imagens/rodape/linkedin.svg"
           alt="Logo do LinkedIn"></a>
     </div>
-    <div>
-      <p class="copyright">&copy; Copyrigth Raízes da Cura</p>
+    <div class="copyright">
+      <p><a href="./politicaseprivacidade.html#copyright">&copy; Copyrigth Raízes da Cura</a></p>
       <p>Todos os direitos reservados</p>
-      <a href="politicaseprivacidade.html">Políticas de Privacidade e Termos de Uso</a>
     </div>
-    <div>
-      <p>Sugestões, dúvidas ou elogios? <a href="fale-conosco.html">Fale Conosco.</a></p><br />
-      <nav>
+    <div class="w-100">
+      <p>Sugestões, dúvidas ou elogios? <a href="./fale-conosco.html">Fale Conosco.</a></p>
+      <nav class="mapa-site">
         <ul>
           <li><a href="../index.html">Início</a></li>
-          <li><a href="sobre-nos.html">Sobre Nós</a></li>
-          <li><a href="artigos-e-mais.html">Artigos e Mais</a></li>
-          <li><a href="ache-ajuda.html">Ache Ajuda!</a></li>
-          <li><a href="cadastre-se.html">Cadastre-se!</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="fale-conosco.html">Fale Conosco</a></li>
-          <li><a href="creditos-de-imagens-e-outros.html">Créditos de imagens e outros</a></li>
+          <li><a href="./sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="./ache-ajuda.html">Ache Ajuda!</a></li>
+          <li><a href="./politicaseprivacidade.html#termos">Termos de Uso</a></li>
+        </ul>
+        <ul>
+          <li><a href="./cadastre-se.html">Cadastre-se!</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./politicaseprivacidade.html#privacidade">Políticas de Privacidade</a></li>
+          <li><a href="./creditos-de-imagens-e-outros.html">Créditos de imagens e outros</a></li>
+        </ul>
+        <ul>
+          <li><a href="./artigos-e-mais.html">Artigos e Mais</a></li>
+          <li><a href="./submenu/ajuda.html">Como você pode ajudar?</a></li>
+          <li><a href="./submenu/diferenca.html">Qual a diferença de um transtorno para o outro?</a>
+          </li>
+          <li><a href="./submenu/tratar.html">Como fazer o tratamento?</a></li>
         </ul>
       </nav>
     </div>
   </footer>
 
-  <div>
+  <div class="cookies">
     O Raízes da Cura usa cookies para fins de personalização, publicidade e mais. Saiba mais ou altere suas
     preferências de
     cookies. Ao utilizar o serviço do Raízes da Cura, você concorda com o uso de cookies.
-    <a href="#">Fechar</a>
+    <button><a href="#">Fechar</a></button>
   </div>
+
 </body>
 
 </html>
