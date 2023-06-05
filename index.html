@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS da página inicial -->
+    <link rel="stylesheet" href="./estilos/index.css">
     <title>Raízes da Cura - Início</title>
 </head>
 
@@ -37,57 +39,66 @@
         </nav>
     </header>
 
-    <main>
-        <div>
-            <h1>Boas-vindas!</h1>
-            <h1>Você de bem com a sua saúde mental!</h1>
-            <h3>Precisa de ajuda ou quer ajudar? <br />
-                Cadastre-se e faça parte da nossa comunidade.</h3>
-            <button><a href="./html/cadastre-se.html">Cadastre-se!</a></button>
-        </div>
-        <div>
-            <figure>
-                <img src=".\imagens\index\tela-inicial-1_500x333.jpg" alt="Imagem 1 da tela inicial do carrossel. 
-                    Imagem com uma mulher meditando em cima de um tapete rosa,
-                    em posição de ioga, vestindo uma calça jeans azul e uma blusa branca, e 
-                    com cabelos amarrados, com gato dormindo ao lado esquerdo da mulher. 
-                    Ao fundo, várias plantas e flores em jarros.
-                    Uma caneca vermelha com desenho de coração branco ao lado direito da mulher.
-                    Ao fundo da imagem, uma parede de cor verde.">
-                <figcaption>Técnicas de meditação</figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src=".\imagens\index\tela-inicial-2_500x333.jpg" alt="Imagem 2 da tele inicial do carrossel. 
-                    Está escrito em letras brancas e fundo rosa: 'Manage your stress'.
-                    Embaixo da escrita, está uma mulher meditando em cima de um tapete rosa, 
-                    vestindo calça azul e blusa cor salmão, e cabelos castanhos amarrados.
-                    Ao fundo, desenho de semi-circulo com desenhos de objetos flutuando em torno dela.
-                    Os objetos são: relógio de parede, símbolo de exclamação amarelo, 
-                    símbolo de interrogação amarelo, fichário, calendário e folhas, 
-                    mãos abertas segurando folhas, imagem de flor de lótus, 
-                    coração com sinais vitais, cérebro com check e símbolos musicais (3 colcheias)">
-                <figcaption>Hábitos saudáveis</figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src=".\imagens\index\tela-inicial-3_500x333.jpg" alt="Imagem 3 da tele inicial do carrossel.
-                    Pessoa vestindo calça amarela e blusa preta e de cabelos curtos,
-                    em posição de ioga,
-                    meditando em cima da grama e com uma lâmpada transparente 
-                    desenhada em cima da cabeça.
-                    Uma imagem de cérebro grande e amarela por trás da pessoa.
-                    Ainda atrás dela, símbolos de 3 engrenagens
-                    de tamanhos diversos (uma amarela, uma cinza e uma branca de borda amarela) e 
-                    também umas folhas de plantas.">
-                <figcaption>Receba ajuda</figcaption>
-            </figure>
-        </div>
+    <main class="fundo-gradiente">
+        <section class="boas-vindas">
+            <article class="texto-boas-vindas">
+                <h1>Boas-vindas!</h1>
+                <h2>Você de bem com a sua saúde mental!</h2>
+                <h3>Precisa de ajuda ou quer ajudar? <br>
+                    Cadastre-se e faça parte da nossa comunidade.</h3>
+                <a class="botao" href="./html/cadastre-se.html">Cadastre-se!</a>
+            </article>
+            <article class="conteiner-carrossel">
+                <div class="carrossel">
+                    <div id="imagem1">
+                        <figure>
+                            <img src=".\imagens\index\tela-inicial-1.jpg" alt="Imagem 1 da tela inicial do carrossel. 
+                        Imagem com uma mulher meditando em cima de um tapete rosa,
+                        em posição de ioga, vestindo uma calça jeans azul e uma blusa branca, e 
+                        com cabelos amarrados, com gato dormindo ao lado esquerdo da mulher. 
+                        Ao fundo, várias plantas e flores em jarros.
+                        Uma caneca vermelha com desenho de coração branco ao lado direito da mulher.
+                        Ao fundo da imagem, uma parede de cor verde.">
+                            <figcaption>Técnicas de meditação</figcaption>
+                        </figure>
+                    </div>
+                    <div id="imagem2">
+                        <figure>
+                            <img src=".\imagens\index\tela-inicial-2.jpg" alt="Imagem 2 da tele inicial do carrossel. 
+                        Está escrito em letras brancas e fundo rosa: 'Manage your stress'.
+                        Embaixo da escrita, está uma mulher meditando em cima de um tapete rosa, 
+                        vestindo calça azul e blusa cor salmão, e cabelos castanhos amarrados.
+                        Ao fundo, desenho de semi-circulo com desenhos de objetos flutuando em torno dela.
+                        Os objetos são: relógio de parede, símbolo de exclamação amarelo, 
+                        símbolo de interrogação amarelo, fichário, calendário e folhas, 
+                        mãos abertas segurando folhas, imagem de flor de lótus, 
+                        coração com sinais vitais, cérebro com check e símbolos musicais (3 colcheias)">
+                            <figcaption>Hábitos saudáveis</figcaption>
+                        </figure>
+                    </div>
+                    <div id="imagem3">
+                        <figure>
+                            <img src=".\imagens\index\tela-inicial-3.jpg" alt="Imagem 3 da tele inicial do carrossel.
+                        Pessoa vestindo calça amarela e blusa preta e de cabelos curtos,
+                        em posição de ioga, meditando em cima da grama e com uma lâmpada 
+                        transparente desenhada em cima da cabeça.
+                        Uma imagem de cérebro grande e amarela por trás da pessoa.
+                        Ainda atrás dela, símbolos de 3 engrenagens de tamanhos diversos 
+                        (uma amarela, uma cinza e uma branca de borda amarela) e 
+                        também umas folhas de plantas.">
+                            <figcaption>Receba ajuda</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="navegacao-carrossel">
+                    <a href="#imagem1">&#9679;</a>
+                    <a href="#imagem2">&#9679;</a>
+                    <a href="#imagem3">&#9679;</a>
+                </div>
+            </article>
+        </section>
     </main>
-
-    <br /><br /><br />
 
     <footer class="fundo-gradiente">
         <p>Siga-nos!</p>

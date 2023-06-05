@@ -8,6 +8,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 20;
 }
 
 .w-100 {
@@ -20,7 +21,6 @@ header {
     align-items: center;
     height: 70px;
     background-color: #FEFEFE;
-    ;
     padding: 0 50px;
     /* Caso queiramos o fundo do menu transparente
     background-color: #cddadba8;
