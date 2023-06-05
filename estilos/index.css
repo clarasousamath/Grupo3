@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fundo-gradiente {
+    background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
+}
+
+.boas-vindas {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    gap: 5%;
+}
+
+.boas-vindas>* {
+    flex: 1;
+}
+
+.texto-boas-vindas {
+    padding-top: 60px;
+}
+
+.texto-boas-vindas h1,
+.texto-boas-vindas h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.texto-boas-vindas h1 {
+    color: #ef0189;
+}
+
+.texto-boas-vindas h2 {
+    color: #004AAD;
+}
+
+.texto-boas-vindas h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #004aad;
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.conteiner-carrossel {
+    display: flex;
+    flex: 1.4;
+    flex-direction: column;
+    width: 524px;
+    margin-bottom: 25px;
+}
+
+.carrossel {
+    display: flex;
+    /* https://css-tricks.com/css-only-carousel/ */
+    overflow: hidden;
+}
+
+.carrossel img {
+    /* border-radius: 25% 75%/50%; */
+    border-radius: 14% 30%/73%;
+    width: 524px;
+    height: 400px;
+    z-index: 10;
+    transform: scale(1.0);
+}
+
+.carrossel figcaption {
+    text-align: center;
+}
+
+.navegacao-carrossel {
+margin-top: -50px;
+z-index: 10;
+align-self: center;
+}
+
+.navegacao-carrossel a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #ef0189;
+}
