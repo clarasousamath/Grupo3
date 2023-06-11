@@ -1,0 +1,56 @@
+body {
+     background-color: #F7FDF3;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+#h1-creditos {
+    font-size: 26px;
+    color: #004AAD;
+    font-weight: bold;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.direito-imagens {
+    display: flex;
+    gap: 20px;
+}
+
+.direito-imagens > * {
+    flex: 1; 
+}
+
+.direito-imagens img {
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px lightgray;
+}
+
+.direito-imagens li {
+    margin-bottom: 25px;
+}
+
+.direito-imagens figcaption {
+    text-align: center;
+}
+
+.direitos-canva {
+    margin-top: 40px;
+    font-style: italic;    
+}
+
+.direitos-canva a, figcaption a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+    color: red
+}
