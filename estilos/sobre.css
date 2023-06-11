@@ -1,0 +1,43 @@
+body {
+    background-color: #F7FDF3;
+}
+
+.sessao-sobre {
+    display: flex;
+    gap: 100px;
+    width: 80%;
+    margin: auto;
+    padding: 60px 0 ;
+}
+
+.sessao-sobre > * {
+ flex: 1; 
+}
+
+.imagem-fundo {
+    display: grid;
+}
+
+.feijao-verde {
+    transform: rotate(179.1deg);
+    z-index: 1;
+}
+
+.imagem-fundo img {
+    grid-area: 1/1;
+    z-index: 2;
+}
+
+#h1-sobre {
+    font-size: 26px;
+    color: #004AAD;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.sessao-sobre p {
+    line-height: 22px;
+    text-align: justify;
+    text-indent: 40px;
+    margin-bottom: 20px;
+}
