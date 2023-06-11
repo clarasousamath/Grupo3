@@ -112,6 +112,7 @@ footer {
 
 footer a {
     color: #262b73;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -166,4 +167,30 @@ nav.mapa-site>* {
 
 .mapa-site li {
     margin-bottom: 8px;
+}
+
+/* Estilizando o aviso de cookies */
+
+.cookies {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #FEFEFE;
+    padding: 0 50px;
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+    padding: 0 10%;
+}
+
+.cookies-texto, .cookies-texto a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cookies-fechar a {
+    text-decoration: none;
+    font-size: 30px;
 }
