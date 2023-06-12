@@ -15,6 +15,10 @@ header {
     width: 100%;
 }
 
+img {
+    width: 100%;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -55,48 +59,29 @@ header {
 
 /* Estilizando o submenu */
 
-.menu ul li a ul {
-    float: left;
-    width: 200px;
-    height: 40px;
-    display: inline-block;
-    text-align: center;
-    line-height: 40px;
-    font-size: 25px;
+.menu ul li ul li a {
+    display: block;
+    line-height: 20px;
 }
 
 .menu ul ul {
-    margin-top: 10px;
+    border-radius: 1em;
+    box-shadow: 2px 3px 3px lightgray;
+    background-color: #FEFEFE;
     display: none;
     top: 0px;
     position: absolute;
 }
 
-.menu ul li ul {
-    width: 200px;
-    height: 40px;
-    margin-right: 10px;
-    position: absolute;
-    flex-direction: column;
-}
-
-.menu ul li ul li {
-    width: 200px;
-    height: 40px;
-    white-space: nowrap;
-    margin-right: 30px;
-}
-
 .menu ul li:hover>ul {
-    padding-top: 50px;
     display: block;
-    margin-top: 1px;
+    margin-top: 50px;
 }
 
-img {
-    width: 100%;
+.submenu-mais {
+    font-size: 18px;
+    vertical-align: text-bottom;
 }
-
 
 /* Estilizando o rodapé */
 
@@ -193,4 +178,13 @@ nav.mapa-site>* {
 .cookies-fechar a {
     text-decoration: none;
     font-size: 30px;
+}
+
+.cookies a:hover {
+    color: #ef0189;
+}
+
+.cookies-fechar:hover {
+    background-color: #E9A1D7;
+    border-radius: 15px;
 }
