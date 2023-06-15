@@ -52,7 +52,15 @@ html {
     border-radius: 20px;
     text-decoration: none;
 }
-
+.botao:hover {
+    display: inline-block;
+    background-color: #ef0189;
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+}
 .conteiner-carrossel {
     display: flex;
     flex: 1.4;
