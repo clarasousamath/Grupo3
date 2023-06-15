@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/fale-conosco.css">
     <title>Raízes da Cura - Fale Conosco</title>
 </head>
 
@@ -30,7 +31,7 @@
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="#">Artigos e Mais<span class="submenu-mais">&blacktriangledown;</span></a>
                     <ul>
-                        <li><a href="../artigos-e-mais.html">O que são doenças mentais?</a></li>
+                        <li><a href="../html/artigos-e-mais.html">O que são doenças mentais?</a></li>
                         <li><a href="../html/submenu/ajuda.html">Como você pode ajudar?</a></li>
                         <li><a href="../html/submenu/diferenca.html">Qual a diferença de um transtorno para o outro?</a>
                         </li>
@@ -45,59 +46,59 @@
         </nav>
     </header>
 
-    <section id="contato">
-        <div class="formulario">
-            <h1>Vamos conversar?</h1>
-            <p>Este é o nosso formulário de contato. Sinta-se à vontade para sugestões e/ou elogios.</p>
-
-            <form action="post">
-                <label for="wname">Nome: <br>
-                    <input type="text" name="name" id="wname" minlength="8" maxlength="12" placeholder="Digite seu Nome"
-                        required>
-                </label> <br>
-                <label for="wsname">Sobrenome: <br>
-                    <input type="text" name="sname" id="wsname" minlength="8" maxlength="12"
-                        placeholder="Digite seu Sobrenome" required>
-                </label> <br>
-                <label for="wemail">Email: <br>
-                    <input type="email" name="email" id="wemail" minlength="15" maxlength="35"
-                        placeholder="Digite seu melhor Email" autocomplete="email" required>
-                </label> <br>
-                <label for="wphone">Telefone: <br>
-                    <input type="tel" name="phone" id="wphone" minlength="8" maxlength="12"
-                        placeholder="Digite seu telefone" required>
-                </label> <br>
-                <label for="wmsg">Menssagem:<br>
-                    <textarea name="msg" id="wmsg" cols="30" rows="10"></textarea>
-                </label>
-                <br>
-                <button><a href="#">Enviar</a></button>
-            </form>
-
-            <section>
-                <div>
-                    <h4>E-mail:</h4>
-                    <p><a href="mailto:raizes-da-cura@gmail.com">raizes-da-cura@gmail.com</a> </p>
-                </div>
-                <div>
-                    <h4>Telefone:</h4>
-                    <p><a href="tel:(99) 99999-9999">(99) 99999-9999</a></p>
-                </div>
-                <div>
-                    <h4>Endereço:</h4>
-                    <p>Rua da Calopsita, 1234. <br>
-                        Bairro de A-Z. Cidade/ Estado.<br>
-                        Brasil. CEP: 59000-000.</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31799567.172332037!2d-73.23115894444462!3d-13.36375866414209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1684439200663!5m2!1spt-BR!2sbr"
-                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-            </section>
-    </section>
-
-    <br /><br /><br />
+    <main>
+        <section class="section">
+            <div class="div01">
+                <p class="p01">"Aqui você encontrará informações de como nos contactar entre outras informações importantes, e-mail, telefone, localização e etc..."</p>
+                <h2>Dados de contato:</h2>
+                <br><h4>E-mail:</h4>
+                <p><a href="mailto:raizes-da-cura@gmail.com">raizes-da-cura@gmail.com</a></p>
+                <h4>Telefone:</h4>
+                <p><a href="tel:(99) 99999-9999">(99) 99999-9999</a></p>
+                <h4>Endereço:</h4>
+                <h4>Rua da Calopsita, 1234.<br>
+                Bairro de A-Z. Cidade/ Estado.<br>
+                Brasil. CEP: 59000-000.</h4>
+                <h2>Localização:</h2>
+                <br><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31799567.172332037!2d-73.23115894444462!3d-13.36375866414209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1684439200663!5m2!1spt-BR!2sbr"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="div02">
+                <h2 class="h2">Vamos conversar ?</h2>
+                <p class="p02">Este é o nosso formulário de contato. Sinta-se à vontade para sugestões e/ou elogios.</p>
+                <form action="post">
+                    <label for="wname">Nome: <br>
+                        <input class="text-input" type="text" name="name" id="wname" minlength="8" maxlength="12" placeholder="Digite seu Nome"
+                            required>
+                    </label> <br>
+                    <label for="wsname">Sobrenome: <br>
+                        <input class="text-input" type="text" name="sname" id="wsname" minlength="8" maxlength="12"
+                            placeholder="Digite seu Sobrenome" required>
+                    </label> <br>
+                    <label for="wemail">E-mail: <br>
+                        <input class="text-input" type="email" name="email" id="wemail" minlength="15" maxlength="35"
+                            placeholder="Digite seu melhor e-mail: email@provedor.com" autocomplete="email" required>
+                    </label> <br>
+                    <label for="wphone">Telefone: <br>
+                        <input class="text-input" type="tel" name="phone" id="wphone" minlength="8" maxlength="12"
+                            placeholder="Digite seu telefone: (DDD)99999-9999" required>
+                    </label> <br>
+                    <label for="wmsg">Mensagem:<br>
+                        <textarea class="text-input" name="msg" id="wmsg" cols="30" rows="10"></textarea>
+                    </label>
+                    <br>
+                    <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox" required>
+                        <label for="aceite-politicaseprivacidade">
+                            Declaro ter lido e aceito os
+                            <a class="a2" href="./politicaseprivacidade.html">
+                                Termos de uso e Políticas de Privacidade.</a>
+                        </label>
+                    <br><br><a class="botao" href="#">Enviar</a>
+                </form>
+        </section>
+    </main>
 
     <footer class="fundo-gradiente">
         <p>Siga-nos!</p>

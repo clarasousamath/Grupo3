@@ -1,0 +1,26 @@
+.todas-as-sections{
+    display: flex;
+    flex: 1;
+}
+div {
+    line-height: 1.48em;
+}
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.div {
+    margin: auto;
+    align-items: center;
+    text-align: justify;
+    padding-left: 13rem;
+    padding-right: 13rem;
+    height: auto;
+    width: auto;
+}
+.paragrafo {
+    text-indent: 3em;
+}
