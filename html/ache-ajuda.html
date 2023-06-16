@@ -50,7 +50,7 @@
   <main>
 
     <div>
-      <h1 class="title">Ache Ajuda!</h1>
+      
       <br>
       <p class="centered-text">O nosso site oferece um amplo leque de recursos para auxiliar na busca por apoio
         psicológico adequado,
@@ -77,6 +77,7 @@
     </div>
     <div class="container">
       <div class="box">
+        <h1 class="title">Ache Ajuda!</h1>
         <h3 class="subtitle">De onde podemos te ajudar?(Selecione um estado)</h3>
         </br>
         </br>
@@ -113,174 +114,12 @@
           <option value="Tocantins">Tocantins</option>
 
         </select>
-
-        <label for="itens">Locais:</label>
-
-        <select id="itens" onchange="exibirInformacoes()">
-          <option value="">Selecione um estado primeiro</option>
-        </select>
-
+      
         <br /><br />
 
 
-
-        <div id="informacoesOpcao"></div>
-        <div id="informacoesItem"></div>
-
   </main>
-
-  <script>
-    function atualizarItens() {
-      var selecao = document.getElementById("selecao");
-      var itens = document.getElementById("itens");
-      var informacoesOpcao = document.getElementById("informacoesOpcao");
-      var informacoesItem = document.getElementById("informacoesItem");
-
-      // Limpa os itens atuais
-      itens.innerHTML = "";
-
-      // Limpa as informações da opção e do item
-      informacoesOpcao.innerHTML = "";
-      informacoesItem.innerHTML = "";
-
-      // Obtém a opção selecionada
-      var opcaoSelecionada = selecao.value;
-
-      // Adiciona os itens relacionados à opção selecionada
-      if (opcaoSelecionada === "Acre") {
-        var opcao1Itens = ["Selecionar...", "Caps 1", "Caps 2", "Caps 3"];
-        adicionarItens(opcao1Itens);
-        informacoesOpcao.innerHTML = "Informações do Acre";
-      } else if (opcaoSelecionada === "Alagoas") {
-        var opcao2Itens = ["Selecionar...", "Caps 4", "Caps 5", "Caps 6"];
-        adicionarItens(opcao2Itens);
-        informacoesOpcao.innerHTML = "Informações de Alagoas";
-      } else if (opcaoSelecionada === "Amapá") {
-        var opcao3Itens = ["Selecionar...", "Item X", "Item Y", "Item Z"];
-        adicionarItens(opcao3Itens);
-        informacoesOpcao.innerHTML = "Informações do Amapá";
-      } else if (opcaoSelecionada === "Amazonas") {
-        var opcao4Itens = ["Selecionar...", "CAPS AD III SÃO MATHEUS - ZONA LESTE", "CAPS AD II PINHEIRO - ZONA OESTE", "CAPS AD III - CENTRO"];
-        adicionarItens(opcao4Itens);
-        informacoesOpcao.innerHTML = "Informações do Amazonas";
-      } else if (opcaoSelecionada === "Bahia") {
-        var opcao5Itens = ["Selecionar...", "CAPS AD SÃO MATHEUS ", "CAPS AD II PINHEIRO", "CAPS AD III"];
-        adicionarItens(opcao5Itens);
-        informacoesOpcao.innerHTML = "Informações de Bahia";
-      } else if (opcaoSelecionada === "Ceára") {
-        var opcao7Itens = ["Selecionar...", "CAPS AD", "CAPS AD II", "CAPS AD III"];
-        adicionarItens(opcao7Itens);
-        informacoesOpcao.innerHTML = "Informações de Ceára";
-      } else if (opcaoSelecionada === "Distrito Federal") {
-        var opcao8Itens = ["Selecionar...", "CAPS AB", "CAPS AB II", "CAPS AB III"];
-        adicionarItens(opcao8Itens);
-        informacoesOpcao.innerHTML = "Informações do Distrito Federal";
-      } else if (opcaoSelecionada === "Espírito Santo") {
-        var opcao9Itens = ["Selecionar...", "CAPS AC", "CAPS AC II", "CAPS AC III"];
-        adicionarItens(opcao9Itens);
-        informacoesOpcao.innerHTML = "Informações do Espírito Santo";
-      } else if (opcaoSelecionada === "Goiás") {
-        var opcao10Itens = ["Selecionar...", "CAPS AF", "CAPS AF II", "CAPS AF III"];
-        adicionarItens(opcao10Itens);
-        informacoesOpcao.innerHTML = "Informações de Goiás";
-      } else if (opcaoSelecionada === "Maranhão") {
-        var opcao11Itens = ["Selecionar...", "CAPS AG", "CAPS AG II", "CAPS AG III"];
-        adicionarItens(opcao11Itens);
-        informacoesOpcao.innerHTML = "Informações do Maranhão";
-      } else if (opcaoSelecionada === "Mato Grosso") {
-        var opcao12Itens = ["Selecionar...", "CAPS AH", "CAPS AH II", "CAPS AH III"];
-        adicionarItens(opcao12Itens);
-        informacoesOpcao.innerHTML = "Informações do Mato Grosso";
-      } else if (opcaoSelecionada === "Mato Grosso do Sul") {
-        var opcao13Itens = ["Selecionar...", "CAPS AJ", "CAPS AJ II", "CAPS AJ III"];
-        adicionarItens(opcao13Itens);
-        informacoesOpcao.innerHTML = "Informações do Mato Grosso do Sul";
-      } else if (opcaoSelecionada === "Minas Gerais") {
-        var opcao14Itens = ["Selecionar...", "CAPS AK", "CAPS AK II", "CAPS AK III"];
-        adicionarItens(opcao14Itens);
-        informacoesOpcao.innerHTML = "Informações do Minas Gerais";
-      } else if (opcaoSelecionada === "Pará") {
-        var opcao15Itens = ["Selecionar...", "CAPS AL", "CAPS AL II", "CAPS AL III"];
-        adicionarItens(opcao15Itens);
-        informacoesOpcao.innerHTML = "Informações do Pará";
-      } else if (opcaoSelecionada === "Paraíba") {
-        var opcao16Itens = ["Selecionar...", "CAPS AM", "CAPS AM II", "CAPS AM III"];
-        adicionarItens(opcao16Itens);
-        informacoesOpcao.innerHTML = "Informações da Paraíba";
-      } else if (opcaoSelecionada === "Paraná") {
-        var opcao17Itens = ["Selecionar...", "CAPS AN", "CAPS AN II", "CAPS AN III"];
-        adicionarItens(opcao17Itens);
-        informacoesOpcao.innerHTML = "Informações do Paraná";
-      } else if (opcaoSelecionada === "Pernambuco") {
-        var opcao18Itens = ["Selecionar...", "CAPS AO", "CAPS AO II", "CAPS AO III"];
-        adicionarItens(opcao18Itens);
-        informacoesOpcao.innerHTML = "Informações de Pernambuco";
-      } else if (opcaoSelecionada === "Piauí") {
-        var opcao19Itens = ["Selecionar...", "CAPS AP", "CAPS AP II", "CAPS AP III"];
-        adicionarItens(opcao19Itens);
-        informacoesOpcao.innerHTML = "Informações do Piauí";
-      } else if (opcaoSelecionada === "Rio de Janeiro") {
-        var opcao20Itens = ["Selecionar...", "CAPS AQ", "CAPS AQ II", "CAPS AQ III"];
-        adicionarItens(opcao20Itens);
-        informacoesOpcao.innerHTML = "Informações do Rio de Janeiro";
-      } else if (opcaoSelecionada === "Rio Grande do Norte") {
-        var opcao21Itens = ["Selecionar...", "CAPS AR", "CAPS AR II", "CAPS AR III"];
-        adicionarItens(opcao21Itens);
-        informacoesOpcao.innerHTML = "Informações do Rio Grande do Norte";
-      } else if (opcaoSelecionada === "Rio Grande do Sul") {
-        var opcao22Itens = ["Selecionar...", "CAPS AS", "CAPS AS II", "CAPS AS III"];
-        adicionarItens(opcao22Itens);
-        informacoesOpcao.innerHTML = "Informações do Rio Grande do Sul";
-      } else if (opcaoSelecionada === "Rondônia") {
-        var opcao23Itens = ["Selecionar...", "CAPS AT", "CAPS AT II", "CAPS AT III"];
-        adicionarItens(opcao23Itens);
-        informacoesOpcao.innerHTML = "Informações de Rondônia";
-      } else if (opcaoSelecionada === "Roraíma") {
-        var opcao24Itens = ["Selecionar...", "CAPS AV", "CAPS AV II", "CAPS AV III"];
-        adicionarItens(opcao24Itens);
-        informacoesOpcao.innerHTML = "Informações da Roraíma";
-      } else if (opcaoSelecionada === "Tocantins") {
-        var opcao25Itens = ["Selecionar...", "CAPS AW", "CAPS AW II", "CAPS AW III"];
-        adicionarItens(opcao25Itens);
-        informacoesOpcao.innerHTML = "Informações dO Tocantins";
-      } else if (opcaoSelecionada === "Santa Catarina") {
-        var opcao26Itens = ["Selecionar...", "CAPS AX", "CAPS AX II", "CAPS AX III"];
-        adicionarItens(opcao26Itens);
-        informacoesOpcao.innerHTML = "Informações de Santa Catarina";
-      } else if (opcaoSelecionada === "São Paulo") {
-        var opcao27Itens = ["Selecionar...", "CAPS AZ", "CAPS AZ II", "CAPS AZ III"];
-        adicionarItens(opcao27Itens);
-        informacoesOpcao.innerHTML = "Informações de São Paulo";
-      } else if (opcaoSelecionada === "Sergipe") {
-        var opcao16Itens = ["Selecionar...", "CAPS AA", "CAPS AA II", "CAPS AA III"];
-        adicionarItens(opcao16Itens);
-        informacoesOpcao.innerHTML = "Informações de Sergipe";
-      }
-    }
-
-    function adicionarItens(itensArray) {
-      var itens = document.getElementById("itens");
-
-      // Adiciona cada item ao elemento select
-      for (var i = 0; i < itensArray.length; i++) {
-        var option = document.createElement("option");
-        option.text = itensArray[i];
-        itens.add(option);
-      }
-    }
-
-    function exibirInformacoes() {
-      var itens = document.getElementById("itens");
-      var informacoesItem = document.getElementById("informacoesItem");
-
-      // Obtém o item selecionado
-      var itemSelecionado = itens.value;
-
-      // Exibe as informações do item selecionado
-      informacoesItem.innerHTML = "Informações do Local: " + itemSelecionado;
-    }
-  </script>
-  </div>
+  </div>[]
   </div>
   <br /><br /><br />
 

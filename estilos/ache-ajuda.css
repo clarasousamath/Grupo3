@@ -20,9 +20,10 @@
   }
 
   .box {
-    border: 2px solid black;
-    padding: 40px;
+    border: none solid black;
+    padding: 30px;
     width: fit-content;
+    background-color: rgba(224,245,253,255) ;
   }
 
   .container {
@@ -30,4 +31,10 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
+  }
+
+  h1 {
+    color: rgba(0,74,173,255) ;
+    font-weight: bold;
+    padding: 20px;
   }
