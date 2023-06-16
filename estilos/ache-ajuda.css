@@ -1,5 +1,6 @@
+
 .container {
-    display: flex;
+    display: flex ;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -16,13 +17,16 @@
   }
 
   .centered-text {
-    text-align: center;
+    text-align: justify;
   }
 
   .box {
-    border: none solid black;
-    padding: 30px;
-    width: fit-content;
+    border: none ;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 13px;
+    width: 800px;
     background-color: rgba(224,245,253,255) ;
   }
 
@@ -36,5 +40,39 @@
   h1 {
     color: rgba(0,74,173,255) ;
     font-weight: bold;
-    padding: 20px;
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  body {
+    background-color: rgba(247,253,243,255);
+    align-items: center;
+  }
+
+  h3 {
+    color: rgba(27,60,120,255);
+    padding: 8px;
+    font-weight: bold; 
+  }
+
+  p {
+      color: rgba(27,60,120,255);
+      padding: 5px;
+      margin: 10px;
+  }
+
+  .box2 {
+    border: 10px;
+    background-color: rgb(37, 150, 190);
+    margin: 20px;
+
+
+  }
+
+  h4 {
+    color: white
+  }
+
+  .pbox2 {
+    color: white;
   }
