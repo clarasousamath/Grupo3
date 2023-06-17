@@ -9,21 +9,17 @@ main {
 }
 a {
     text-decoration: none;
-    font-size: 14px;
     font-weight: 400;
 }
 a:hover {
     color: #ef0189;
-    font-size: 14px;
     font-weight: 400;
-}
-div {
-    line-height: 1.34em;
 }
 .div01 {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: left;
+    line-height: 1.34em;
     padding-left: 2rem;
     padding-right: 2rem;
     height: 670px;
@@ -51,6 +47,7 @@ h4 {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: justify;
+    line-height: 1.34em;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
