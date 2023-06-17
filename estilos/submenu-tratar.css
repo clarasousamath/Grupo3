@@ -1,0 +1,140 @@
+h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p {
+    text-indent: 3em;
+}
+.section01-titulo01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/artigos/Fundo05.png);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+}
+.div01-titulo01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    width: 50%;
+    line-height: 1.5em;
+}
+.section02-texto01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6em;
+}
+.div02-texto01 {
+    display: flex;
+    text-align: justify;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 1em;
+    height: auto;
+    width: 800px;
+}
+.div03-video01 {
+    display: flex;
+    padding-left: 0.5rem;
+    height: auto;
+    margin-top: 0.5rem;
+}
+.section03-titulo02-video02 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.div04-titulo02-video02 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    height: auto;
+    width: 800px;
+}
+.div05-video02 {
+    display: flex;
+    padding-left: 0.5rem;
+    height: auto;
+}
+.section04-titulo03-video03 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.div06-titulo03-video03 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    height: auto;
+    width: 800px;
+}
+.div07-video03 {
+    display: flex;
+    padding-left: 0.5rem;
+    height: auto;
+}
+.section05-titulo04-video04 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.div08-titulo04-video04 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    height: auto;
+    width: 800px;
+}
+.div09-video04 {
+    display: flex;
+    padding-left: 0.5rem;
+    height: auto;
+}
+.section06-titulo05-video05 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.div10-titulo05-video05 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    height: auto;
+    width: 800px;
+}
+.div11-video05 {
+    display: flex;
+    padding-left: 0.5rem;
+    height: auto;
+}
