@@ -31,13 +31,13 @@ p {
     width: 50%;
     line-height: 1.5em;
 }
-.section02-textos01 {
+.section02-texto01 {
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6em;
 }
-.div02-textos01 {
+.div02-texto01 {
     display: flex;
     text-align: justify;
     font-size: 14px;
