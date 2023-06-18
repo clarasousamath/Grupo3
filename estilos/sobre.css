@@ -7,11 +7,11 @@ body {
     gap: 100px;
     width: 80%;
     margin: auto;
-    padding: 60px 0 ;
+    padding: 60px 0;
 }
 
-.sessao-sobre > * {
- flex: 1; 
+.sessao-sobre>* {
+    flex: 1;
 }
 
 .imagem-fundo {
