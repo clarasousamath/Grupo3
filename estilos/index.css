@@ -52,6 +52,7 @@ html {
     border-radius: 20px;
     text-decoration: none;
 }
+
 .botao:hover {
     display: inline-block;
     background-color: #ef0189;
@@ -61,6 +62,7 @@ html {
     border-radius: 20px;
     text-decoration: none;
 }
+
 .conteiner-carrossel {
     display: flex;
     flex: 1.4;
@@ -82,6 +84,13 @@ html {
     height: 400px;
     z-index: 10;
     transform: scale(1.0);
+    animation: display 9s infinite;
+}
+
+.carrossel div {
+    /* opacity: 0; */
+    /* animation: display 20s infinite; */
+
 }
 
 .carrossel figcaption {
@@ -89,9 +98,9 @@ html {
 }
 
 .navegacao-carrossel {
-margin-top: -50px;
-z-index: 10;
-align-self: center;
+    margin-top: -50px;
+    z-index: 10;
+    align-self: center;
 }
 
 .navegacao-carrossel a {
@@ -99,3 +108,39 @@ align-self: center;
     font-size: 22px;
     color: #ef0189;
 }
+
+@keyframes display {
+    0% {
+        transform: translateX(524px);
+        /* opacity: 0; */
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-524px);
+        /* opacity: 0; */
+    }
+
+    100% {
+        transform: translateX(-524px);
+        /* opacity: 0; */
+    }
+}
+
+.carrossel div:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.carrossel div:nth-child(3) {
+    animation-delay: 6s;
+}
+

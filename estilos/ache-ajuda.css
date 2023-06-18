@@ -1,78 +1,97 @@
+body {
+  background-color: #f7fdf3;
+}
 
 .container {
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .title {
-    text-align: center;
-    margin: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 40px auto;
+  background-color: #e0f5fd;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+}
 
-  .subtitle {
-    text-align: center;
-    margin: 0;
-  }
+.opcoes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
-  .centered-text {
-    text-align: justify;
-  }
+.referencias {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 30px;
+}
 
-  .box {
-    border: none ;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 13px;
-    width: 800px;
-    background-color: rgba(224,245,253,255) ;
-  }
+.lista-enderecos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-  }
+.lista-enderecos address {
+  width: 80%;
+  margin: auto;
+}
 
-  h1 {
-    color: rgba(0,74,173,255) ;
-    font-weight: bold;
-    padding: 30px;
-    font-size: 20px;
-  }
+.profissionais {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  align-items: center;
+}
 
-  body {
-    background-color: rgba(247,253,243,255);
-    align-items: center;
-  }
-
-  h3 {
-    color: rgba(27,60,120,255);
-    padding: 8px;
-    font-weight: bold; 
-  }
-
-  p {
-      color: rgba(27,60,120,255);
-      padding: 5px;
-      margin: 10px;
-  }
-
-  .box2 {
-    border: 10px;
-    background-color: rgb(37, 150, 190);
-    margin: 20px;
+.profissionais img {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+}
 
 
-  }
+.title {
+  font-size: 26px;
+  color: #004AAD;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
-  h4 {
-    color: white
-  }
+.subtitle {
+  text-align: center;
+  font-size: 22px;
+}
 
-  .pbox2 {
-    color: white;
-  }
+.texto-detalhe {
+  line-height: 22px;
+  text-align: justify;
+  text-indent: 40px;
+  margin-bottom: 20px;
+}
+
+address {
+  line-height: 20px;
+  border-left: solid 1px #004AAD ;
+  padding-left: 10px;
+}
+
+address h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+address a {
+  text-decoration: none;
+  color: #262b73;
+}
+
+address a:hover {
+  color: #ef0189;
+}
