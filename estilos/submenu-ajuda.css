@@ -12,6 +12,7 @@ p {
     justify-content: center;
     align-items: center;
     background-image: url(../imagens/artigos/Fundo03.png);
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     height: 50vh;
