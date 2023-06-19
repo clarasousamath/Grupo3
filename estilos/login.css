@@ -1,12 +1,13 @@
-body {
+main .fundo-gradiente {
     background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
+    padding: 40px 0;
 }
 
 #formulario {
     display: flex;
     flex-direction: column;
     width: 60%;
-    margin: 40px auto;
+    margin: auto;
 }
 
 .formulario-login {
@@ -23,7 +24,7 @@ body {
     background: url('../imagens/login.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 60vh;
 }
 
 .titulo-formulario {

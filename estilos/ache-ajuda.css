@@ -1,5 +1,5 @@
 body {
-  background-color: #f7fdf3;
+  background-color: #F7FDF3;
 }
 
 .container {
@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   gap: 20px;
   flex: 1;
+  color:  #144258
 }
 
 .lista-enderecos address {
@@ -65,7 +66,9 @@ body {
 
 .subtitle {
   text-align: center;
+  color:  #262b73;
   font-size: 22px;
+
 }
 
 .texto-detalhe {
@@ -73,6 +76,7 @@ body {
   text-align: justify;
   text-indent: 40px;
   margin-bottom: 20px;
+  color:  #144258
 }
 
 address {
@@ -95,3 +99,5 @@ address a {
 address a:hover {
   color: #ef0189;
 }
+
+
