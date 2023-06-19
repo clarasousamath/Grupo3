@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Wix+Madefor+Text:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --cor1: #D3EDEE;
+    --cor2: #004AAD;
+    --cor3: #EF0189;
+
+    --fonte-principal: 'Open Sans', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+.cadastro {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 50px; 
+}
+.text-cadastro {
+    flex: 1.5;
+    padding: 2rem;
+}
+.text-cadastro h1 {
+    margin-bottom: 2rem;
+}
+.text-cadastro p {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.form-cadastro {
+    flex: 2;
+}
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cor1);
+  padding: 1.5rem;
+  box-shadow: 5px 5px 10px #00000048;
+}
+.form-header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.login-button {
+    display: flex;
+    align-items: center;
+}
+.login-button button {
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    color: #FFF;
+    background-color: var(--cor2);
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.login-button button:hover,
+.continue-button button:hover {
+    background-color: #001025;
+}
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+ }
+ .form-header h1::after,
+ .text-cadastro h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--cor2);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+ }
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.input-box input{
+   margin: 0.6rem 0; 
+   padding: 0.7rem 1.1rem;
+   border: none;
+   border-radius: 10px;
+}
+textarea {
+    display: flex;
+    flex: 1;
+    width: 300px;
+    margin: 0.6rem 0; 
+    padding: 0.7rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    border-radius: 1px 1px 6px #0000001c;
+    font-size: 13px;
+    resize: none;
+}
+textarea:focus, 
+select:focus {
+    background: #5555555e;
+}
+select {
+    border-radius: 10px;
+    margin: 0.6rem 0;
+    border: none;
+    outline: none;
+    display: flex;
+}
+.input-box input:hover {
+    background-color: #5555555e;
+    font-weight: 600;
+}
+.input-box input:focus-visible {
+    outline: 1px solid #55555577;
+}
+.input-box label,
+.gender-title h6 {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.input-box input::placeholder {
+    color: #000000be;
+}
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+.gender-input input {
+    margin-right: 0.35rem;
+}
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--cor2);
+}
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
