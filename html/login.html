@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Raízes da Cura - Login</title>
 </head>
 
@@ -47,52 +51,53 @@
 
     <main>
         <section id="login">
-            <div id="imagem">
-            </div>
+
             <div id="formulario">
-                <h1>Login</h1>
 
-                <p>
-                    Seja Bem-Vindo(a) ao <strong>Raízes da Cura!</strong>.
-                </p>
-                <form action="login.php" method="post" autocomplete="on">
-                    <div class="campo">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
-                        <label for="wlogin">Login
-                            <input type="email" name="login" id="wlogin" placeholder="digite seu Email"
-                                autocomplete="email" minlength="6" maxlength="30" required>
-                        </label>
+                <div class="corpo-formulario">
+
+                    <div id="imagem-login">
+
                     </div>
+                    <div class="formulario-login">
+                        <div class="titulo-formulario">
+                            <h1>Login</h1>
+                        </div>
+                        <form method="post" autocomplete="on">
+                            <div class="campo-formulario campo-texto-formulario">
+                                <label for="wlogin">E-mail
+                                </label>
+                                <label class="input">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" name="login" id="wlogin" placeholder="Digite seu e-mail"
+                                        autocomplete="email" required>
+                                </label>
+                            </div>
 
-                    <div class="campo">
-                        <span class="material-symbols-outlined">
-                            lock
-                        </span>
-                        <label for="wsenha">Senha
-                            <input type="password" name="senha" id="wsenha" placeholder="digite sua senha"
-                                autocomplete="current-password" minlength="8" maxlength="20" required>
-                        </label>
+                            <div class="campo-formulario campo-texto-formulario">
+                                <label for="wsenha">Senha
+                                </label>
+                                <label class="input">
+                                    <i class="fa-solid fa-key"></i>
+                                    <input type="password" name="senha" id="wsenha" placeholder="Digite sua senha"
+                                        autocomplete="current-password" minlength="6" maxlength="20" required>
+                                </label>
+                            </div>
+                            <div class="campo-formulario">
+                                <a class="botao-login" href="">Login</a>
+                            </div>
+                            <div class="esqueci-senha-email">
+                                <a href="#" class="esqueci-senha">
+                                    Esqueci a senha / E-mail
+                                </a>
+                            </div>
+                        </form>
                     </div>
+                </div>
+            </div>
 
-                    <input type="submit" value="login">
-                    <a href="#" class="botao">
-                        Esqueci a senha <span class="material-symbols-outlined"> mail
-                        </span>
-                    </a>
-                </form>
-            </div>
-            <div>
-                <figure>
-                    <img src="../imagens/login.jpg" alt="Imagem de pessoa com flores saindo da cabeça.">
-                </figure>
-            </div>
         </section>
     </main>
-
-
-    <br /><br /><br />
 
     <footer class="fundo-gradiente">
         <p>Siga-nos!</p>
@@ -138,7 +143,7 @@
 
     <div class="cookies">
         <div class="cookies-texto">
-            <p>O Raízes da Cura usa cookies para fins de personalização, publicidade e mais.  
+            <p>O Raízes da Cura usa cookies para fins de personalização, publicidade e mais.
                 <a href="./politicaseprivacidade.html#privacidade">Saiba mais</a> ou altere suas
                 preferências de cookies.
             </p>
@@ -148,4 +153,5 @@
     </div>
 
 </body>
+
 </html>
