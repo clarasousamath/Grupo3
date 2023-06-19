@@ -154,3 +154,16 @@ p {
     padding-left: 0.5rem;
     height: auto;
 }
+
+ul.lista-episodios {
+    padding: 10px;
+    margin-left: 70px;
+}
+
+.lista-episodios li{
+    list-style-type: disc;
+}
+
+article p{
+    margin: 15px;
+}
