@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 40px auto;
+}
+
+.formulario-login {
+    background-color: #FEFEFE;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#imagem-login {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: url('../imagens/login.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.titulo-formulario {
+    text-align: center;
+    font-size: 26px;
+    color: #004AAD;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.corpo-formulario {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: -1px 0px 8px 0px rgb(82, 82, 82);
+}
+
+.corpo-formulario>* {
+    flex: 1;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo-texto-formulario {
+
+    border-bottom: solid 1px gray;
+}
+
+.formulario-login form {
+    width: 80%;
+    margin: auto;
+}
+
+.formulario-login .input {
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    margin-bottom: 0;
+}
+
+.formulario-login .input input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.formulario-login label {
+    margin-bottom: 10px;
+}
+
+.formulario-login a {
+    text-decoration: none;
+    color: #262b73;
+}
+
+.formulario-login a:hover {
+    color: #ef0189;
+}
+
+a.botao-login {
+    background-color: #004aad;
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.botao-login:hover{
+    background-color: #ef0189;
+    color: white; 
+}
+
+.esqueci-senha-email {
+    text-align: center;
+    font-size: 14px;
+}
