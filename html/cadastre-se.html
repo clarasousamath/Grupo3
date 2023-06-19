@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="../estilos/menu-e-rodape.css">
     <link rel="stylesheet" href="../estilos/cadastra-se.css">
     <!-- Google Fontes utilizado para o menu e rodapé -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <title>Raízes da Cura - Cadastre-se</title>
 </head>
 
@@ -28,16 +28,16 @@
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="#">Artigos e Mais<span class="submenu-mais">&blacktriangledown;
-                </span>
-                </a>
+                        </span>
+                    </a>
                     <ul>
-                        <li><a href="../html/artigos-e-mais.html">O que são doenças mentais? 
-                        </a>
+                        <li><a href="../html/artigos-e-mais.html">O que são doenças mentais?
+                            </a>
                         </li>
                         <li><a href="../html/submenu/ajuda.html">Como você pode ajudar?</a>
                         </li>
-                        <li><a href="../html/submenu/diferenca.html">Qual a diferença de um 
-                            transtorno para o outro?</a>
+                        <li><a href="../html/submenu/diferenca.html">Qual a diferença de um
+                                transtorno para o outro?</a>
                         </li>
                         <li><a href="../html/submenu/tratar.html">Como fazer o tratamento?</a>
                         </li>
@@ -54,197 +54,175 @@
     <main>
         <section class="cadastro">
             <article class="text-cadastro">
-                <h1>Cadastre-se</h1>
+                <h1> Olá! </h1>
+                <p class="boas-vindas"> Desde já, seja muito bem-vindo(a)! É um prazer te conhecer!
+                    Parabéns e obrigada pela sua iniciativa! </p>
                 <p>
-                    Nessa página você pode se cadastrar para obter ajuda individual bem como 
-                    se tornarum parceiro-ajudador do site e assim nos ajudar a multiplicar 
-                    essa idéia que surgiu com intuito de oferecer ajuda à pessoas que passam 
-                    ou estão passando por transtornos como ansiedade, depressão entre outros.
+                    Nessa página você pode se cadastrar para obter ajuda individual, bem como
+                    se tornar um parceiro-ajudador do nosso site e, assim, multiplicar
+                    essa ideia que surgiu com intuito de oferecer acolhimento a pessoas que passaram
+                    (ou estejam passando) por algum momento difícil que possa interferir na sua
+                    saúde mental, como por exemplo: ansiedade, depressão, entre outros.
                 </p>
                 <p>
-                    Ao se cadastrar, você tem a opção de escolher o perfil de alguém que 
-                    precisa de ajuda, bem como se somar nessa luta e se tornar um parceiro 
-                    ajudador se dispondo desde a conversar com pessoas que estão passando ou 
-                    passaram por esses problemas, ou ate mesmo disponibilizar seu contato 
-                    profissional (Caso seja alguem da área) para que as pessoas da sua 
-                    comunidade te encontrem através desse site e assim haja um contato direto 
-                    e presencial para auxilio no tratamento e ajuda dessas pessoas.
+                    Ao se cadastrar, você tem a opção de escolher o perfil de alguém que
+                    precisa de ajuda e/ou se juntar nessa luta e se tornar um parceiro
+                    ajudador. Desse modo, você pode se dispor desde a conversar com pessoas que passaram (ou
+                    estejam passando) por algum problema ou, até mesmo, disponibilizar seu contato
+                    profissional (caso seja um profissional da área de Psicologia), para que as pessoas da sua
+                    comunidade possam te encontrar mais facilmente, através desse site, e assim haja um contato direto
+                    e presencial (ou online) para auxilio no tratamento e ajuda dessas pessoas.
                 </p>
+
             </article>
             <div class="form-cadastro">
-               <!-- <div class="form-img">
+                <!-- <div class="form-img">
                 <img src="../imagens/form-cadastro.png" alt="">
                </div> -->
-               <div class="form">
-                <form action="#">
-                    <div class="form-header"> 
-                        <div class="title"> 
-                             <h1>Cadastra-se</h1>
+                <div class="form">
+                    <form action="#">
+                        <div class="form-header">
+                            <div class="title">
+                                <h1>Cadastre-se!</h1>
+                            </div>
+
                         </div>
-                        <div class="login-button"> 
-                            <button><a href="#">Entrar</a></button> 
+                        <div class="input-group">
+                            <div class="input-box">
+                                <label for="fistname">Primeiro nome:</label>
+                                <input type="text" name="fistname" id="fistname" placeholder="Digite seu primeiro nome"
+                                    required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="lastname">Sobrenome:</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome"
+                                    required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="number">Celular:</label>
+                                <input type="tel" name="number" id="number" placeholder="(xx) xxxx-xxxx"
+                                    pattern="[0-9]{2}[0-9]{9}" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="perfil">Qual o seu perfil? *</label>
+                                <select name="perfil" id="perfil" required>
+                                    <option selected disabled hidden value="">
+                                        Selecione...</option>
+                                    <option value="preciso-de-ajuda">Preciso de ajuda</option>
+                                    <option value="quero-ajuda">Quero ajudar pessoas</option>
+                                    <option value="sou-profissional">Sou um profissional da área</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="identificacao" id="identificacao">Como você se identifica?</label>
+                                <select name="identificacao" id="identificacao" required>
+                                    <option selected disabled hidden value=""> Selecione...</option>
+                                    <option value="ele">Ele</option>
+                                    <option value="ela">Ela</option>
+                                    <option value="outro">Outro</option>
+                                    <option value="nao-identificar-se">Prefiro não informar</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="password">Senha:</label>
+                                <input type="password" name="password" id="password" placeholder="Digite sua senha"
+                                    required>
+                            </div>
+
+                            <div class="input-box gender-inputs">
+                                <label for="confirmepassword">Confirme Senha:</label>
+                                <input type="confirmepassword" name="confirmepassword" id="confirmepassword"
+                                    placeholder="confirme sua senha" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-group"> 
-                         <div class="input-box">
-                             <label for="fistname">Primeiro nome</label>
-                             <input type="text" name="fistname" id="fistname" 
-                              placeholder="Digite seu prmeiro nome" required>
-                         </div>
-
-                         <div class="input-box">
-                             <label for="lastname">Sobrenome</label>
-                             <input type="text" name="lastname" id="lastname" 
-                             placeholder="Digite seu Sobrenome" required>
-                         </div>
-
-                         <div class="input-box">
-                             <label for="email">Email</label>
-                             <input type="email" name="email" id="email" 
-                              placeholder="Digite seu email" required>
-                         </div>
-
-                         <div class="input-box">
-                             <label for="number">Celular</label>
-                             <input type="tel" name="number" id="number" 
-                             placeholder="(xx) xxxx-xxxx" pattern="[0-9]{2}[0-9]{9}" required>
-                         </div>
-
-
-
-                         <div class="input-box">
-                            <label for="msg">Deixe uma mensagen</label>
-                            <textarea name="msg" id="msg" cols="60" rows="10" 
-                             maxlength="300" minlength="60" required> 
-                            </textarea>
+                        <div class="input-box">
+                            <label for="msg">Fale sobre você:</label>
+                            <textarea name="msg" id="msg" cols="60" rows="10" maxlength="300" minlength="60"
+                                required></textarea>
                         </div>
-
-                         <div class="input-box">
-                             <label for="perfil">Selecione o Tipo do Perfil:*</label>
-                             <select name="perfil" id="perfil" required>
-                                 <option selected disabled hidden value="">
-                                    Selecione... 
-                                </option>
-                                 <option value="preciso-de-ajuda">Preciso de Ajuda</option>
-                                 <option value="quero-ajuda">Quero ajudar Pessoas</option>
-                                 <option value="sou-profissional">
-                                    Sou um Profissional da Área
-                                 </option>
-                             </select>
-                         </div>
-
-
-
-
-                         <div class="input-box">
-                             <label for="password">Senha</label>
-                             <input type="password" name="password" id="password" 
-                             placeholder="Digite sua senha" required>
-                         </div>
-
-                         <div class="input-box">
-                             <label for="confirmepassword">Confirme Senha</label>
-                             <input type="confirmepassword" name="confirmepassword" 
-                             id="confirmepassword" placeholder="confirme sua senha" required>
-                         </div>
-                    </div>
-
-                    <div class="gender-inputs">
-                        <div class="gender-title">
-                        <h6>Gêneros</h6>    
+                        <div class="botoes">
+                            <div class="continue-button">
+                                <button><a href="#">Continuar</a></button>
+                            </div>
+                            <div class="login-button">
+                                <button><a href="#">Entrar</a></button>
+                            </div>
                         </div>
-
-                        <div class="gender-group">
-                          <div class="gender-input">
-                            <input type="radio" name="gender" id="fmaile">
-                            <label for="fmaile">Femenino</label>
-                          </div> 
-                          
-                          <div class="gender-input">
-                            <input type="radio" name="gender" id="male">
-                            <label for="male">Masculino</label>
-                          </div> 
-
-                          <div class="gender-input">
-                            <input type="radio" name="gender" id="othrs">
-                            <label for="othrs">Othrs</label>
-                          </div>
-                          
-                          <div class="gender-input">
-                            <input type="radio" name="gender" id="none">
-                            <label for="none">Perfiro não dizer</label>
-                          </div> 
-                        </div>
-                    </div>
-
-                </form>
-                <div class="continue-button">
-                    <button><a href="#">Continuar</a></button>
+                    </form>
                 </div>
-               </div>
             </div>
         </section>
     </main>
 
-        <footer class="fundo-gradiente">
-            <p>Siga-nos!</p>
-            <div class="redes">
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="../imagens/rodape/instagram.svg"alt="Logo Instagram">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img src="../imagens/rodape/twitter.svg"alt="Logo do Twitter">
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="../imagens/rodape/facebook.svg"alt="Logo do Facebook">
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="../imagens/rodape/linkedin.svg"alt="Logo do LinkedIn">
-                </a>
-            </div>
-            <div class="copyright">
-                <p>
-                    <a href="./politicaseprivacidade.html#copyright">&copy; Copyright Raízes 
-                        da Cura</a>
-                </p>
-                <p><a href="https://github.com/clarasousamath/Grupo3" target="_blank">Todos os direitos reservados</a></p>
-            </div>
-            <div class="w-100">
-                <p>Sugestões, dúvidas ou elogios? <a href="./fale-conosco.html">Fale Conosco.</a></p>
-                <nav class="mapa-site">
-                    <ul>
-                        <li><a href="../index.html">Início</a></li>
-                        <li><a href="./sobre-nos.html">Sobre Nós</a></li>
-                        <li><a href="./ache-ajuda.html">Ache Ajuda!</a></li>
-                        <li><a href="./politicaseprivacidade.html#termos">Termos de Uso</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="./cadastre-se.html">Cadastre-se!</a></li>
-                        <li><a href="./login.html">Login</a></li>
-                        <li><a href="./politicaseprivacidade.html#privacidade">Políticas de Privacidade</a></li>
-                        <li><a href="./creditos-de-imagens-e-outros.html">Créditos de imagens e outros</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="./artigos-e-mais.html">Artigos e Mais</a></li>
-                        <li><a href="./submenu/ajuda.html">Como você pode ajudar?</a></li>
-                        <li><a href="./submenu/diferenca.html">Qual a diferença de um transtorno para o outro?</a>
-                        </li>
-                        <li><a href="./submenu/tratar.html">Como fazer o tratamento?</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
-
-        <div class="cookies">
-            <div class="cookies-texto">
-                <p>O Raízes da Cura usa cookies para fins de personalização, publicidade e mais.  
-                    <a href="./politicaseprivacidade.html#privacidade">Saiba mais</a> ou altere suas
-                    preferências de cookies.
-                </p>
-                <p>Ao utilizar o serviço do Raízes da Cura, você concorda com o uso de cookies.</p>
-            </div>
-            <div class="cookies-fechar"><a href="#">&times;</a></div>
+    <footer class="fundo-gradiente">
+        <p>Siga-nos!</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../imagens/rodape/instagram.svg" alt="Logo Instagram">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="../imagens/rodape/twitter.svg" alt="Logo do Twitter">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../imagens/rodape/facebook.svg" alt="Logo do Facebook">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="../imagens/rodape/linkedin.svg" alt="Logo do LinkedIn">
+            </a>
         </div>
+        <div class="copyright">
+            <p>
+                <a href="./politicaseprivacidade.html#copyright">&copy; Copyright Raízes
+                    da Cura</a>
+            </p>
+            <p><a href="https://github.com/clarasousamath/Grupo3" target="_blank">Todos os direitos reservados</a></p>
+        </div>
+        <div class="w-100">
+            <p>Sugestões, dúvidas ou elogios? <a href="./fale-conosco.html">Fale Conosco.</a></p>
+            <nav class="mapa-site">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre-nos.html">Sobre Nós</a></li>
+                    <li><a href="./ache-ajuda.html">Ache Ajuda!</a></li>
+                    <li><a href="./politicaseprivacidade.html#termos">Termos de Uso</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./cadastre-se.html">Cadastre-se!</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./politicaseprivacidade.html#privacidade">Políticas de Privacidade</a></li>
+                    <li><a href="./creditos-de-imagens-e-outros.html">Créditos de imagens e outros</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./artigos-e-mais.html">Artigos e Mais</a></li>
+                    <li><a href="./submenu/ajuda.html">Como você pode ajudar?</a></li>
+                    <li><a href="./submenu/diferenca.html">Qual a diferença de um transtorno para o outro?</a>
+                    </li>
+                    <li><a href="./submenu/tratar.html">Como fazer o tratamento?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <div class="cookies">
+        <div class="cookies-texto">
+            <p>O Raízes da Cura usa cookies para fins de personalização, publicidade e mais.
+                <a href="./politicaseprivacidade.html#privacidade">Saiba mais</a> ou altere suas
+                preferências de cookies.
+            </p>
+            <p>Ao utilizar o serviço do Raízes da Cura, você concorda com o uso de cookies.</p>
+        </div>
+        <div class="cookies-fechar"><a href="#">&times;</a></div>
+    </div>
 
 </body>
 
