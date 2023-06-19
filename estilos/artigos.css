@@ -167,3 +167,7 @@ ul.lista-episodios {
 article p{
     margin: 15px;
 }
+
+body {
+    background-color:#f7fdf3;
+}

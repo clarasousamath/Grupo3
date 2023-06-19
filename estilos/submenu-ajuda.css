@@ -118,3 +118,7 @@ p {
     padding-left: 0.5rem;
     height: auto;
 }
+
+body {
+    background-color:#f7fdf3;
+}
