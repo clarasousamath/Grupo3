@@ -1,3 +1,7 @@
+body {
+    background-color: #F7FDF3;;
+}
+
 .todas-as-sections{
     display: flex;
     flex: 1;

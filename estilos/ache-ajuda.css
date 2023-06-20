@@ -21,6 +21,14 @@ body {
   align-items: center;
 }
 
+#selecao {
+  width: 14.8rem;
+  height: 2.4rem;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
 .referencias {
   display: flex;
   gap: 10px;
@@ -33,7 +41,7 @@ body {
   flex-direction: column;
   gap: 20px;
   flex: 1;
-  color:  #144258
+  color: #144258
 }
 
 .lista-enderecos address {
@@ -66,7 +74,7 @@ body {
 
 .subtitle {
   text-align: center;
-  color:  #262b73;
+  color: #262b73;
   font-size: 22px;
 
 }
@@ -76,12 +84,12 @@ body {
   text-align: justify;
   text-indent: 40px;
   margin-bottom: 20px;
-  color:  #144258
+  color: #144258
 }
 
 address {
   line-height: 20px;
-  border-left: solid 1px #004AAD ;
+  border-left: solid 1px #004AAD;
   padding-left: 10px;
 }
 
@@ -99,5 +107,3 @@ address a {
 address a:hover {
   color: #ef0189;
 }
-
-
