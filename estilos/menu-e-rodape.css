@@ -57,6 +57,12 @@ img {
     border-radius: 2em;
 }
 
+.menu li a.ativo {
+    background-color: #3e46b8;
+    color: white;
+    border-radius: 2em;
+}
+
 /* Estilizando o submenu */
 
 .menu ul li ul li a {
