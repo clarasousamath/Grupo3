@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../imagens/Icones-2/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../estilos/reset.css">
     <link rel="stylesheet" href="../estilos/menu-e-rodape.css">
-    <link rel="stylesheet" href="../estilos/cadastra-se.css">
+    <link rel="stylesheet" href="../estilos/cadastre-se.css">
     <!-- Google Fontes utilizado para o menu e rodapé -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,46 +76,55 @@
 
             </article>
             <div class="form-cadastro">
-                <!-- <div class="form-img">
-                <img src="../imagens/form-cadastro.png" alt="">
-               </div> -->
                 <div class="form">
                     <form action="#">
+
                         <div class="form-header">
                             <div class="title">
                                 <h1>Cadastre-se!</h1>
                             </div>
-
                         </div>
+
                         <div class="input-group">
                             <div class="input-box">
-                                <label for="fistname">Primeiro nome:</label>
-                                <input type="text" name="fistname" id="fistname" placeholder="Digite seu primeiro nome"
+                                <label for="fistname">Primeiro nome: *</label>
+                                <input type="text" name="fistname" id="fistname" placeholder="Digite seu nome:"
                                     required>
                             </div>
 
                             <div class="input-box">
-                                <label for="lastname">Sobrenome:</label>
-                                <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome"
+                                <label for="lastname">Sobrenome: *</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome:"
                                     required>
                             </div>
 
                             <div class="input-box">
-                                <label for="email">E-mail:</label>
-                                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                                <label for="email">E-mail: *</label>
+                                <input type="email" name="email" id="email" placeholder="Digite seu email:" required>
                             </div>
 
                             <div class="input-box">
-                                <label for="number">Celular:</label>
+                                <label for="number">Celular: *</label>
                                 <input type="tel" name="number" id="number" placeholder="(xx) xxxx-xxxx"
                                     pattern="[0-9]{2}[0-9]{9}" required>
                             </div>
 
                             <div class="input-box">
+                                <label for="password">Senha: *</label>
+                                <input type="password" name="password" id="password" placeholder="Digite sua senha"
+                                    required>
+                            </div>
+
+                            <div class="input-box gender-inputs">
+                                <label for="confirmepassword">Confirme Senha: *</label>
+                                <input type="confirmepassword" name="confirmepassword" id="confirmepassword"
+                                    placeholder="Confirme sua senha" required>
+                            </div>
+
+                            <div class="input-box">
                                 <label for="perfil">Qual o seu perfil? *</label>
                                 <select name="perfil" id="perfil" required>
-                                    <option selected disabled hidden value="">
-                                        Selecione...</option>
+                                    <option selected disabled hidden value="">Selecione...</option>
                                     <option value="preciso-de-ajuda">Preciso de ajuda</option>
                                     <option value="quero-ajuda">Quero ajudar pessoas</option>
                                     <option value="sou-profissional">Sou um profissional da área</option>
@@ -123,7 +132,7 @@
                             </div>
 
                             <div class="input-box">
-                                <label for="identificacao" id="identificacao">Como você se identifica?</label>
+                                <label for="identificacao" id="identificacao">Como você se identifica? *</label>
                                 <select name="identificacao" id="identificacao" required>
                                     <option selected disabled hidden value=""> Selecione...</option>
                                     <option value="ele">Ele</option>
@@ -133,31 +142,20 @@
                                 </select>
                             </div>
 
-                            <div class="input-box">
-                                <label for="password">Senha:</label>
-                                <input type="password" name="password" id="password" placeholder="Digite sua senha"
-                                    required>
-                            </div>
-
-                            <div class="input-box gender-inputs">
-                                <label for="confirmepassword">Confirme Senha:</label>
-                                <input type="confirmepassword" name="confirmepassword" id="confirmepassword"
-                                    placeholder="confirme sua senha" required>
-                            </div>
                         </div>
                         <div class="input-box">
                             <label for="msg">Fale sobre você:</label>
-                            <textarea name="msg" id="msg" cols="60" rows="10" maxlength="300" minlength="60"
+                            <textarea name="msg" id="msg" cols="60" rows="8" maxlength="300" minlength="60" placeholder="Fique a vontade para escrever o que quiser..."
                                 required></textarea>
                         </div>
-                        <div class="botoes">
-                            <div class="continue-button">
-                                <button><a href="#">Continuar</a></button>
+                        <section class="section-botoes">
+                            <div>
+                                <a class="botao" href="#">Continuar</a>
                             </div>
-                            <div class="login-button">
-                                <button><a href="#">Entrar</a></button>
+                            <div>
+                                <a class="botao" href="#">Entrar</a>
                             </div>
-                        </div>
+                        </section>
                     </form>
                 </div>
             </div>
