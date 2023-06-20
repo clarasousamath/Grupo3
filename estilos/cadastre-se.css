@@ -104,7 +104,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0.8rem 0;
+    padding: 0.2rem 0;
 }
 
 .input-box {
@@ -135,39 +135,21 @@ textarea {
     width: 100%;
 }
 
-textarea:focus,
-select:focus {
-    background: rgb(236, 236, 236);
-}
-
 select {
     border-radius: 10px;
     height: 2.4rem;
     margin: 0.8rem 0;
-    height: 2.3rem;
+    height: 2.4rem;
     width: 14.8rem;
     border: none;
     outline: none;
     display: flex;
 }
 
-.input-box input:hover {
-    background-color: rgb(236, 236, 236);
-    font-weight: 600;
-}
-
-.input-box input:focus-visible {
-    outline: 1px solid rgb(236, 236, 236);
-}
-
 .input-box label,
 .gender-title h6 {
     font-size: 16px;
     font-weight: 600;
-}
-
-.input-box input::placeholder {
-    color: rgb(88, 88, 88);
 }
 
 .gender-group {
@@ -188,7 +170,6 @@ select {
 .gender-input label {
     font-size: 0.81rem;
     font-weight: 600;
-    color: rgb(197, 197, 197);;
 }
 
 .section-botoes {
