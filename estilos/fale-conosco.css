@@ -22,7 +22,8 @@ a:hover {
     line-height: 1.34em;
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 670px;
+    padding-bottom: 1rem;
+    height: auto;
     width: 400px;
     background-color: white;
     border-top-left-radius: 4%;
@@ -38,20 +39,25 @@ h2 {
     font-size: 25px;
     font-weight: 600;
     padding-top: 0.8em;
+    margin-bottom: 10px;
 }
 h4 {
     font-size: 14px;
     font-weight: 400;
 }
+.ul-endereco {
+    list-style-type: disc;
+}
 .div02 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-align: justify;
+    text-align: left;
     line-height: 1.34em;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 1rem;
-    height: 655px;
+    padding-top: 0.02rem;
+    padding-bottom: 1rem;
+    height: auto;
     width: 400px;
     background-color: #ef0189;
     color: white;
@@ -67,7 +73,6 @@ h4 {
 .p02 {
     font-size: 14px;
     margin-top: 1.5em;
-    padding: right 1.5em;
 }
 form {
     margin-top: 1.3rem;
@@ -76,6 +81,11 @@ form {
 }
 .text-input {
     width: 380px;
+    border-radius: 10px;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
 }
 .a2 {
     color: white;
@@ -89,6 +99,7 @@ form {
     background-color: #004aad;
     color: white;
     font-weight: bold;
+    margin-top: 0.5rem;
     padding: 10px 35px;
     border-radius: 20px;
     text-decoration: none;
