@@ -30,6 +30,9 @@ a:hover {
     border-bottom-left-radius: 4%;
     box-shadow: -1px 0px 8px 0px rgb(82, 82, 82);
 }
+ul {
+    font-size: 14px;
+}
 .p01 {
     font-size: 14px;
     margin-top: 2em;
@@ -47,6 +50,7 @@ h4 {
 }
 .ul-endereco {
     list-style-type: disc;
+    margin-left: 0.9rem;
 }
 .div02 {
     margin-top: 2rem;
@@ -59,15 +63,24 @@ h4 {
     padding-bottom: 1rem;
     height: auto;
     width: 400px;
-    background-color: #ef0189;
-    color: white;
+    background-color: #bee3ed;
+    color: black;
     border-top-right-radius: 4%;
     border-bottom-right-radius: 4%;
     box-shadow: 1px 0px 8px 0px rgb(82, 82, 82);
 }
+/* Caso queira usar animação em degradê */
+/* @keyframes animacaofundodiv02 {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+} */
 .h2 {
     font-size: 40px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1.1px;
 }
 .p02 {
@@ -88,11 +101,11 @@ form {
     border: none;
 }
 .a2 {
-    color: white;
+    color: #004aad;
     text-decoration: underline;
 }
 .a2:hover {
-    color: #004aad;
+    color: #ef0189;
 }
 .botao {
     display: inline-block;
@@ -106,8 +119,8 @@ form {
 }
 .botao:hover {
     display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: #ef0189;
+    color: white;
     font-weight: bold;
     padding: 10px 35px;
     border-radius: 20px;

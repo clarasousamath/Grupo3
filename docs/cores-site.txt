@@ -29,3 +29,7 @@ RGB: 84 84 84
 Azul Escuro do Botão ACHE-AJUDA e a SELEÇÃO DOS ESTADOS:
 HEX: #004aad
 RGB: 0 74 173
+
+Div 02 - Página Fale Conosco:
+HEX: #ef0189
+RGB: 190 227 237
