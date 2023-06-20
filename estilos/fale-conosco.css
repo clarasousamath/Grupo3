@@ -19,6 +19,7 @@ a:hover {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: left;
+    font-size: 14px;
     line-height: 1.34em;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -29,9 +30,6 @@ a:hover {
     border-top-left-radius: 4%;
     border-bottom-left-radius: 4%;
     box-shadow: -1px 0px 8px 0px rgb(82, 82, 82);
-}
-ul {
-    font-size: 14px;
 }
 .p01 {
     font-size: 14px;
