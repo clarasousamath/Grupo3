@@ -32,6 +32,7 @@ main {
     color: #004AAD;
     font-size: 20px;
     font-weight: bold;
+    line-height: 1.5rem;
 }
 
 .text-cadastro {
@@ -57,6 +58,7 @@ main {
     margin-bottom: 2rem;
     line-height: 22px;
     text-indent: 3em;
+    line-height: 1.5rem;
 }
 
 .form-cadastro {
@@ -79,35 +81,6 @@ main {
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: space-between;
-}
-
-.login-button {
-    font-weight: bold;
-    padding: 10px 35px;
-}
-
-.login-button button {
-    border: none;
-    padding: 10px 35px;
-    border-radius: 20px;
-    user-select: none;
-    color: #FFF;
-    font-weight: bold;
-    background-color: var(--cor2);
-    text-align: center;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.login-button button:hover,
-.continue-button button:hover {
-    background-color: #ef0189;
-}
-
-.login-button button a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
 }
 
 .form-header h1::after,
@@ -141,8 +114,9 @@ main {
 }
 
 .input-box input {
-    margin: 0.6rem 0;
-    padding: 0.7rem 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.6rem 2.5rem;
     border: none;
     border-radius: 10px;
 }
@@ -150,7 +124,6 @@ main {
 textarea {
     display: flex;
     flex: 1;
-    width: 300px;
     margin: 0.6rem 0;
     padding: 0.7rem 0.5rem;
     border: none;
@@ -169,9 +142,10 @@ select:focus {
 
 select {
     border-radius: 10px;
+    height: 2.4rem;
     margin: 0.8rem 0;
-    height: 20px;
-    width: 250px;
+    height: 2.3rem;
+    width: 14.8rem;
     border: none;
     outline: none;
     display: flex;
@@ -199,7 +173,6 @@ select {
 .gender-group {
     display: flex;
     justify-content: space-between;
-    margin-top: 0.62rem;
     padding: 0 0.5rem;
 }
 
@@ -218,29 +191,26 @@ select {
     color: rgb(197, 197, 197);;
 }
 
-.continue-button button {
-   
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 35px; 
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    user-select: none;
-    background-color: #004AAD; 
-}
-
-.continue-button button a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-}
-
-.botoes {
+.section-botoes {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1;
-    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.botao {
+    display: inline-block;
+    background-color: #004aad;
     color: white;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.botao:hover {
+    display: inline-block;
+    background-color: #ef0189;
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
 }
