@@ -31,7 +31,7 @@ a:hover {
     border-bottom-left-radius: 4%;
     box-shadow: -1px 0px 8px 0px rgb(82, 82, 82);
 }
-.p01 {
+section div p {
     font-size: 14px;
     margin-top: 2em;
     padding: right 1.5em;
@@ -80,10 +80,6 @@ h4 {
     font-size: 40px;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1.1px;
-}
-.p02 {
-    font-size: 14px;
-    margin-top: 1.5em;
 }
 form {
     margin-top: 1.3rem;

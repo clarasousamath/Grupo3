@@ -2,7 +2,7 @@ body {
     background-color: #F7FDF3;;
 }
 
-.todas-as-sections{
+main section{
     display: flex;
     flex: 1;
 }
@@ -12,7 +12,7 @@ h1 {
     text-align: center;
     margin-bottom: 1em;
 }
-.div {
+main section div {
     margin: 30px 0;
     align-items: center;
     text-align: justify;
@@ -22,6 +22,6 @@ h1 {
     height: auto;
     width: auto;
 }
-.paragrafo {
+p {
     text-indent: 3em;
 }
