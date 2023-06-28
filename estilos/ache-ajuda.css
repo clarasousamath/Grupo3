@@ -41,12 +41,7 @@ body {
   flex-direction: column;
   gap: 20px;
   flex: 1;
-  color: #144258
-}
-
-.lista-enderecos address {
-  width: 80%;
-  margin: auto;
+  color: #144258;
 }
 
 .profissionais {
@@ -62,7 +57,6 @@ body {
   border-radius: 10px;
   box-shadow: 2px 3px 3px lightgray;
 }
-
 
 .title {
   font-size: 26px;
@@ -91,6 +85,8 @@ address {
   line-height: 20px;
   border-left: solid 1px #004AAD;
   padding-left: 10px;
+  margin: auto;
+  width: 80%;
 }
 
 address h3 {
