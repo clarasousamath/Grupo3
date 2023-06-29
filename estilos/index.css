@@ -54,13 +54,7 @@ html {
 }
 
 .botao:hover {
-    display: inline-block;
     background-color: #ef0189;
-    color: white;
-    font-weight: bold;
-    padding: 10px 35px;
-    border-radius: 20px;
-    text-decoration: none;
 }
 
 .conteiner-carrossel {
@@ -154,4 +148,14 @@ html {
 
 .carrossel div:nth-child(5) {
     animation-delay: 8s;
+}
+
+/* Responsividade*/
+
+@media screen and (max-width: 1024px){
+    .boas-vindas {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
 }
