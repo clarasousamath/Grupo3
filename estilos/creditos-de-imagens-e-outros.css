@@ -1,5 +1,5 @@
 body {
-     background-color: #F7FDF3;
+    background-color: #F7FDF3;
 }
 
 main {
@@ -21,8 +21,8 @@ main {
     gap: 20px;
 }
 
-.direito-imagens > * {
-    flex: 1; 
+.direito-imagens>* {
+    flex: 1;
 }
 
 .direito-imagens img {
@@ -43,14 +43,21 @@ main {
 
 .direitos-canva {
     margin-top: 40px;
-    font-style: italic;    
+    font-style: italic;
 }
 
-.direitos-canva a, figcaption a {
+.direitos-canva a,
+figcaption a {
     text-decoration: none;
 }
 
 strong {
     font-weight: bold;
     color: red
+}
+
+@media screen and (max-width: 720px) {
+    .direito-imagens {
+        flex-direction: column;
+    }
 }

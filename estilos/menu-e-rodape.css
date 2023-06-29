@@ -9,12 +9,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 20;
+    background-color: white;
 }
 
-.w-100 {
-    width: 100%;
-}
-
+.w-100,
 img {
     width: 100%;
 }
@@ -23,12 +21,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
-    background-color: white;
     padding: 0 50px;
-    /* Caso queiramos o fundo do menu transparente
-    background-color: #cddadba8;
-    backdrop-filter: blur(40px); */
 }
 
 .menu .logo {
@@ -51,12 +44,7 @@ img {
     padding: 6px 12px;
 }
 
-.menu li a:hover {
-    background-color: #3e46b8;
-    color: white;
-    border-radius: 2em;
-}
-
+.menu li a:hover,
 .menu li a.ativo {
     background-color: #3e46b8;
     color: white;
@@ -106,10 +94,7 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
-    color: #ef0189;
-}
-
+footer a:hover,
 footer a:active {
     color: #ef0189;
 }
@@ -121,7 +106,6 @@ footer a:active {
 
 footer>p {
     padding-bottom: 0.5em;
-    font-size: 16px;
 }
 
 .redes {
@@ -140,8 +124,8 @@ div.copyright p {
     padding-top: 8px;
 }
 
-footer .w-100 p {
-    padding-top: 15px;
+footer .w-100 {
+    margin-top: 15px;
 }
 
 nav.mapa-site {
@@ -150,10 +134,12 @@ nav.mapa-site {
     width: 90%;
     margin: auto;
     text-align: left;
+    justify-content: center;
 }
 
-nav.mapa-site>* {
-    width: 33%;
+.mapa-site ul {
+    column-count: 3;
+    column-gap: 30px;
 }
 
 .mapa-site li {
@@ -167,16 +153,15 @@ nav.mapa-site>* {
     gap: 40px;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
     background-color: #FEFEFE;
-    padding: 0 50px;
     position: sticky;
     bottom: 0;
     z-index: 20;
-    padding: 0 10%;
+    padding: 20px 10%;
 }
 
-.cookies-texto, .cookies-texto a {
+.cookies-texto,
+.cookies-texto a {
     font-size: 14px;
     text-decoration: none;
 }
@@ -193,4 +178,64 @@ nav.mapa-site>* {
 .cookies-fechar:hover {
     background-color: #E9A1D7;
     border-radius: 15px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 720px) {
+    .mapa-site ul {
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    .mapa-site ul {
+        column-count: 2;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        margin: auto;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu li a.ativo::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: #004AAD;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-bottom: -4px;
+    }
+
+    .menu li a.ativo::after {
+        background-color: #ef0189;
+    }
+    .menu li a {
+        padding: 0;
+        margin: 0;
+    }
+    .menu li a:hover, .menu li a.ativo {
+        background-color: unset;
+        color: unset;
+    }
 }
