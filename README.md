@@ -32,6 +32,10 @@ Dessa forma, ele faz a ponte entre quem precisa e a ajuda especializada.
 
 Você pode conferir o protótipo inicial em [Raízes da Cura](https://mentesa.my.canva.site/)
 
+### Link de testes (projeto em construção)
+
+Você pode conferir como o site está ficando em [Site Raízes da Cura](https://mirraelly.github.io/Grupo3/)
+
 #### Início
 
 ![Início](imagens/1-home.png)
