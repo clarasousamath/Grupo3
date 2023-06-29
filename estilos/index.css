@@ -113,26 +113,30 @@ html {
 
 @keyframes display {
     0% {
-      transform: translateX(524px);
-      opacity: 0;
+        transform: translateX(524px);
+        opacity: 0;
     }
+
     10% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
+
     20% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
+
     30% {
-      transform: translateX(-524px);
-      opacity: 0;
+        transform: translateX(-524px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateX(-524px);
-      opacity: 0;
+        transform: translateX(-524px);
+        opacity: 0;
     }
-  }
+}
 
 .carrossel div:nth-child(2) {
     animation-delay: 2s;
@@ -152,7 +156,7 @@ html {
 
 /* Responsividade*/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .boas-vindas {
         flex-direction: column;
         gap: 30px;
