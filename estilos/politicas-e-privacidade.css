@@ -1,24 +1,24 @@
 body {
-    background-color: #F7FDF3;;
+    background-color: #F7FDF3;
+    margin: auto;
 }
 
 main {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main > section {
     display: flex;
     flex: 1;
-    width: auto;
+    width: 80vw;
 }
 main > section > div {
     align-items: center;
     text-align: justify;
     line-height: 1.48em;
-    padding-left: 5rem;
-    padding-right: 5rem;
     height: auto;
-    width: 950px;
 }
 main > section > div > h1 {
     font-size: 30px;
@@ -37,14 +37,12 @@ p {
 
 /* Media Query = Mobile */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
     main > section > div {
         margin: auto;
         display: block;
         align-items: center;
-        font-size: 14px;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        font-size: 13px;
     }
     main > section > div> h1 {
         font-size: 22px;
@@ -58,7 +56,12 @@ p {
 
 /* Media Query = Tablet */
 
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and (min-width: 380px) and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     main > section > div {
         margin: auto;
         display: block;
@@ -66,8 +69,8 @@ p {
         display: block;
         align-items: center;
         font-size: 15px;
-        padding-left: 3.7rem;
-        padding-right: 3.7rem;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     main > section > div > h1 {
         font-size: 27px;
