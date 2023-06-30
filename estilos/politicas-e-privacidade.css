@@ -2,12 +2,16 @@ body {
     background-color: #F7FDF3;;
 }
 
+main {
+    margin: 0;
+}
+
 main > section {
     display: flex;
     flex: 1;
+    width: auto;
 }
-main section div {
-    margin: auto;
+main > section > div {
     align-items: center;
     text-align: justify;
     line-height: 1.48em;
@@ -33,11 +37,7 @@ p {
 
 /* Media Query = Mobile */
 
-@media screen and (max-width: 499px) {
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
+@media screen and (max-width: 320px) {
     main > section > div {
         margin: auto;
         display: block;
@@ -59,10 +59,6 @@ p {
 /* Media Query = Tablet */
 
 @media screen and (min-width: 500px) and (max-width: 1024px) {
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
     main > section > div {
         margin: auto;
         display: block;
