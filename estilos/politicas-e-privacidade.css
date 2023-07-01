@@ -1,27 +1,82 @@
 body {
-    background-color: #F7FDF3;;
+    background-color: #F7FDF3;
+    margin: auto;
 }
 
-main section{
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > section {
     display: flex;
     flex: 1;
+    width: 80vw;
 }
-h1 {
+main > section > div {
+    align-items: center;
+    text-align: justify;
+    line-height: 1.48em;
+    height: auto;
+}
+main > section > div > h1 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 1em;
-}
-main section div {
-    margin: 30px 0;
-    align-items: center;
-    text-align: justify;
-    line-height: 1.48em;
-    padding-left: 13rem;
-    padding-right: 13rem;
-    height: auto;
-    width: auto;
+    margin-top: 1rem;
 }
 p {
     text-indent: 3em;
+}
+
+.section-final {
+    padding-bottom: 30px;
+}
+
+/* Media Query = Mobile */
+
+@media screen and (min-width: 255px) and (max-width: 375px) {
+    main > section > div {
+        margin: auto;
+        display: block;
+        align-items: center;
+        font-size: 13px;
+    }
+    main > section > div> h1 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1em;
+        margin-top: 1rem;
+    }
+    
+}
+
+/* Media Query = Tablet */
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main > section > div {
+        margin: auto;
+        display: block;
+        align-items: center;
+        display: block;
+        align-items: center;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    main > section > div > h1 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
 }
