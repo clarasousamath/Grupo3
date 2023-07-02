@@ -1,20 +1,24 @@
-/* Estilizando o Menu */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
+.w-100,
+img {
+    width: 100%;
+}
+
+/* Estilizando o Menu */
+
 header {
     position: sticky;
     top: 0;
     z-index: 20;
     background-color: white;
-}
-
-.w-100,
-img {
-    width: 100%;
 }
 
 .icone-menu {
@@ -56,34 +60,6 @@ img {
     background-color: #3e46b8;
     color: white;
     border-radius: 2em;
-}
-
-/* Estilizando o submenu */
-
-/* .menu ul li ul li a {
-    display: block;
-    line-height: 20px;
-}
-
-.menu ul ul {
-    border-radius: 1em;
-    box-shadow: 2px 3px 3px lightgray;
-    background-color: #FEFEFE;
-    display: none;
-    top: 0px;
-    position: absolute;
-}
-
-.menu ul li:hover>ul {
-    display: block;
-    margin-top: 50px;
-}
-*/
-
-
-.submenu-mais {
-    font-size: 18px;
-    vertical-align: text-bottom;
 }
 
 /* Estilizando o rodapé */
@@ -153,6 +129,24 @@ nav.mapa-site {
 
 .mapa-site li {
     margin-bottom: 8px;
+}
+
+/* Estilizando ícone de navegação para o topo */
+
+.ir-topo {
+    position: fixed;
+    right: 26px;
+    bottom: 26px;
+    opacity: 0.2;
+    transition: opacity 1s;
+}
+
+.ir-topo a {
+    color: #ef0189;
+}
+
+.ir-topo:hover {
+    opacity: 1;
 }
 
 /* Estilizando o aviso de cookies */
