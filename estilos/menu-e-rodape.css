@@ -139,6 +139,7 @@ nav.mapa-site {
     bottom: 26px;
     opacity: 0.2;
     transition: opacity 1s;
+    z-index: 21;
 }
 
 .ir-topo a {
@@ -157,7 +158,7 @@ nav.mapa-site {
     justify-content: space-between;
     align-items: center;
     background-color: #FEFEFE;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     z-index: 20;
     padding: 20px 10%;
