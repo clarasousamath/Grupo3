@@ -149,7 +149,8 @@ nav.mapa-site {
 /* Estilizando o aviso de cookies */
 
 .cookies {
-    display: flex;
+    display: none;
+    /* display: flex; */
     gap: 40px;
     justify-content: space-between;
     align-items: center;
@@ -159,6 +160,10 @@ nav.mapa-site {
     z-index: 20;
     padding: 20px 10%;
 }
+
+/* #alertaCookies {
+    display: none;
+} */
 
 .cookies-texto,
 .cookies-texto a {
@@ -178,6 +183,11 @@ nav.mapa-site {
 .cookies-fechar:hover {
     background-color: #E9A1D7;
     border-radius: 15px;
+}
+
+.esconder {
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 /* mobile */
@@ -230,11 +240,14 @@ nav.mapa-site {
     .menu li a.ativo::after {
         background-color: #ef0189;
     }
+
     .menu li a {
         padding: 0;
         margin: 0;
     }
-    .menu li a:hover, .menu li a.ativo {
+
+    .menu li a:hover,
+    .menu li a.ativo {
         background-color: unset;
         color: unset;
     }
