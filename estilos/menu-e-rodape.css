@@ -60,7 +60,7 @@ img {
 
 /* Estilizando o submenu */
 
-.menu ul li ul li a {
+/* .menu ul li ul li a {
     display: block;
     line-height: 20px;
 }
@@ -78,6 +78,8 @@ img {
     display: block;
     margin-top: 50px;
 }
+*/
+
 
 .submenu-mais {
     font-size: 18px;
@@ -266,5 +268,55 @@ nav.mapa-site {
     .menu li a.ativo {
         background-color: unset;
         color: unset;
+    }
+
+    .menu ul.opcoes-submenu.mostrar-menu {
+        max-height: 200px;
+        margin-top: 13px;
+    }
+
+    .menu ul.opcoes-submenu {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        max-height: 0;
+        margin-left: 13px;
+        overflow: hidden;
+        margin-top: 0;
+        transition: max-height 1s, margin-bottom 0.5s, margin-top 1s;
+    }
+    
+    .menu ul.opcoes-submenu>li:before {
+        content: '-';
+        margin-right: 5px;
+    }
+    
+    .menu ul.opcoes-submenu>li:last-child {
+        padding-bottom: 5px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+
+    /* Responsividade submenu desktop */
+    .menu ul li ul li a {
+        display: block;
+        line-height: 20px;
+    }
+
+    .menu ul ul {
+        border-radius: 1em;
+        box-shadow: 2px 3px 3px lightgray;
+        background-color: #FEFEFE;
+        display: none;
+        top: 0px;
+        position: absolute;
+    }
+
+    .menu ul li:hover>ul {
+        display: block;
+        margin-top: 50px;
     }
 }
