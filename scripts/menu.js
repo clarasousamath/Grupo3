@@ -1,24 +1,38 @@
 const iconeMenu = document.querySelector('.icone-menu');
 const opcoesMenu = document.querySelector('.opcoes-menu');
+const opcoesSubmenu = document.querySelector('.opcoes-submenu');
+const submenuArtigos = document.querySelector('.submenu-artigos');
 
 iconeMenu.addEventListener('click', () => {
-    const visivel = menuVisivel();
+    const visivel = menuVisivel(opcoesMenu);
 
     if (visivel == true) {
-        esconderMenu();
+        esconderMenu(opcoesMenu);
     } else {
-        mostrarMenu();
+        mostrarMenu(opcoesMenu);
     }
 });
 
-function esconderMenu() {
-    opcoesMenu.classList.add('mostrar-menu');
+function esconderMenu(menu) {
+    menu.classList.add('mostrar-menu');
 }
 
-function mostrarMenu() {
-    opcoesMenu.classList.remove('mostrar-menu');
+function mostrarMenu(menu) {
+    menu.classList.remove('mostrar-menu');
 }
 
-function menuVisivel() {
-    return !opcoesMenu.classList.contains('mostrar-menu');
+function menuVisivel(menu) {
+    return !menu.classList.contains('mostrar-menu');
 }
+
+// submenu
+
+submenuArtigos.addEventListener('click', () => {
+    const visivel = menuVisivel(opcoesSubmenu);
+
+    if (visivel == true) {
+        esconderMenu(opcoesSubmenu);
+    } else {
+        mostrarMenu(opcoesSubmenu);
+    }
+})
