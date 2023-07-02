@@ -212,12 +212,17 @@ nav.mapa-site {
 @media screen and (max-width: 1024px) {
     header {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         display: flex;
     }
 
     .icone-menu {
         display: inline;
+    }
+
+    .icone-menu:active,
+    .icone-menu:hover {
+       color: #ef0189;
     }
 
     .menu ul.opcoes-menu.mostrar-menu {
@@ -229,7 +234,6 @@ nav.mapa-site {
     .menu {
         flex-direction: column;
         align-items: start;
-        margin: auto;
     }
 
     .menu ul.opcoes-menu {
@@ -285,12 +289,12 @@ nav.mapa-site {
         margin-top: 0;
         transition: max-height 1s, margin-bottom 0.5s, margin-top 1s;
     }
-    
+
     .menu ul.opcoes-submenu>li:before {
         content: '-';
         margin-right: 5px;
     }
-    
+
     .menu ul.opcoes-submenu>li:last-child {
         padding-bottom: 5px;
     }
