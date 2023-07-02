@@ -17,6 +17,13 @@ img {
     width: 100%;
 }
 
+.icone-menu {
+    display: none;
+    position: absolute;
+    right: 26px;
+    top: 26px;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -150,7 +157,6 @@ nav.mapa-site {
 
 .cookies {
     display: none;
-    /* display: flex; */
     gap: 40px;
     justify-content: space-between;
     align-items: center;
@@ -160,10 +166,6 @@ nav.mapa-site {
     z-index: 20;
     padding: 20px 10%;
 }
-
-/* #alertaCookies {
-    display: none;
-} */
 
 .cookies-texto,
 .cookies-texto a {
@@ -212,18 +214,32 @@ nav.mapa-site {
         display: flex;
     }
 
+    .icone-menu {
+        display: inline;
+    }
+
+    .menu ul.opcoes-menu.mostrar-menu {
+        max-height: 400px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
     .menu {
         flex-direction: column;
         align-items: start;
-        gap: 10px;
         margin: auto;
     }
 
-    .menu ul {
+    .menu ul.opcoes-menu {
         flex-direction: column;
         align-items: start;
         gap: 20px;
         margin-bottom: 20px;
+        /* display: none; */
+        max-height: 0;
+        transition: max-height 1s, margin-bottom 0.5s, margin-top 1s;
+        overflow: hidden;
+        margin-bottom: 0;
     }
 
     .menu li a.ativo::after {
