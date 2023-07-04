@@ -1,24 +1,18 @@
-h2 {
-    font-size: 20px;
-    font-weight: bolder;
-    margin-top: 10px;
-    margin-bottom: 10px;
+body {
+    background-color:#f7fdf3;
 }
-p {
-    text-indent: 3em;
-}
-.section01-titulo01 {
+#titulo-artigos {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background-image: url(../imagens/artigos/Fundo02.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: 50vh;
-    width: 100vw;
+    height: 300px;
+    width: 100%;
 }
-.div01-titulo01 {
+.div-titulo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,148 +21,144 @@ p {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    margin: auto;
-    padding: 2rem;
-    width: 50%;
+    width: 700px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
     line-height: 1.5em;
 }
-.section02-texto01 {
+.section-geral01 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.div-geral {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1.6em;
-}
-.div02-texto01 {
-    display: flex;
     text-align: justify;
-    font-size: 14px;
-    margin-top: 1em;
-    height: auto;
-    width: 800px;
+    line-height: 1.5em;
+    margin-top: 15px;
 }
-.section03-titulos-videos01e02 {
-    display: flex;
-    flex: 1;
-    justify-content: center;
+main > section > div > article > h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 0.7em;
 }
-.div03-titulo-video01 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    height: 30px;
-    width: 400px;
+main > section > div > article > p {
+    text-indent: 3em;
 }
-.div04-titulo-video02 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    height: 30px;
-    width: 400px;
-}
-.section04-videos01e02 {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-}
-.div05-video01{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0.5rem;
-    height: auto;
-}
-.div06-video02 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0.5rem;
-    height: auto;
-}
-.section05-texto02 {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.6em;
-}
-.div07-titulo-e-texto02 {
-    display: flex;
-    text-align: justify;
-    font-size: 14px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    height: auto;
-    width: 800px;
-}
-.div08-texto02-video03 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    margin-bottom: 1em;
-}
-.section06-texto03 {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.6em;
-}
-.div09-titulo-e-texto03 {
-    display: flex;
-    text-align: justify;
-    font-size: 14px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    height: auto;
-    width: 800px;
-}
-.section07-videos04e05 {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-.div10-video04{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0.5rem;
-    height: auto;
-}
-.div10-video05 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0.5rem;
-    height: auto;
-}
-
 ul.lista-episodios {
     padding: 10px;
     margin-left: 70px;
-}
-
-.lista-episodios li{
     list-style-type: disc;
 }
-
-article p{
-    margin: 15px;
+.div-titulo01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 5rem;
+    height: 30px;
+    width: auto;
+}
+.div-titulo02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 5rem;
+    height: 30px;
+    width: auto;
+}
+.div-video01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+    height: auto;
+}
+.div-video02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+    height: auto;
+}
+.div-video03 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.section-geral02 {
+    display: block;
+    width: 1000px;
+    margin: auto;
+}
+main > section > div > iframe {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-body {
-    background-color:#f7fdf3;
+/* Estilização do SUBMENU-ajuda.html */
+#titulo-ajuda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/artigos/Fundo03.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    width: 100%;
 }
+.div-titulo03 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    height: 30px;
+    width: auto;
+}
+/* ############# FIM ############# */
+
+/* Estilização do SUBMENU-diferenca.html */
+#titulo-diferenca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/artigos/Fundo04.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+/* ############# FIM ############# */
+
+/* Estilização do SUBMENU-tratar.html */
+#titulo-tratar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/artigos/Fundo05.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+/* ############# FIM ############# */
