@@ -48,8 +48,8 @@ main {
 }
 
 .title h1 {
-    color: #004AAD;   
-    font-size: 30px; 
+    color: #004AAD;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -177,6 +177,7 @@ select {
     justify-content: space-between;
     flex-direction: row;
 }
+
 .botao {
     display: inline-block;
     background-color: #004aad;
@@ -186,6 +187,7 @@ select {
     border-radius: 20px;
     text-decoration: none;
 }
+
 .botao:hover {
     display: inline-block;
     background-color: #ef0189;
@@ -194,4 +196,18 @@ select {
     padding: 10px 35px;
     border-radius: 20px;
     text-decoration: none;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 800px) {
+    .cadastro, .input-group {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1050px) {
+    .input-group{
+        flex-direction: column;
+    }
 }
