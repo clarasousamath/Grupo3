@@ -6,8 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url(../imagens/artigos/Fundo02.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100%;
     position: relative;
     height: 300px;
     width: 100%;
@@ -49,14 +48,14 @@ main > section > div > article > h2 {
     font-weight: bolder;
     margin-top: 10px;
     margin-bottom: 10px;
-    text-indent: 0.7em;
 }
 main > section > div > article > p {
     text-indent: 3em;
+    margin-bottom: 15px;
 }
 ul.lista-episodios {
     padding: 10px;
-    margin-left: 70px;
+    margin-left: 35px;
     list-style-type: disc;
 }
 .div-titulo01 {
@@ -117,8 +116,7 @@ main > section > div > iframe {
     align-items: center;
     justify-content: center;
     background-image: url(../imagens/artigos/Fundo03.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100%;
     position: relative;
     height: 300px;
     width: 100%;
@@ -141,8 +139,7 @@ main > section > div > iframe {
     align-items: center;
     justify-content: center;
     background-image: url(../imagens/artigos/Fundo04.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100%;
     position: relative;
     height: 300px;
     width: 100%;
@@ -155,10 +152,43 @@ main > section > div > iframe {
     align-items: center;
     justify-content: center;
     background-image: url(../imagens/artigos/Fundo05.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100%;
     position: relative;
     height: 300px;
     width: 100%;
 }
 /* ############# FIM ############# */
+
+@media screen and (max-width: 1024px) {
+    main > section > div > iframe {
+        width: 100%;
+        height: 75%;
+    }
+    #titulo-artigos , #titulo-ajuda , #titulo-diferenca , #titulo-tratar {
+        background-size: cover;
+        background-position: 500px;
+        height: 200px;
+    }
+    .div-titulo {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        padding-top: 1.0em;
+        padding-bottom: 1.0em;
+    }
+    .section-geral01 , .section-geral02{
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+    }
+    .div-geral {
+        font-size: 15px;
+    }
+    ul.lista-episodios {
+        margin-left: 15px;
+    }
+    .div-titulo01 , .div-titulo02 {
+        display: none;
+    }
+}
