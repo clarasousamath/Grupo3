@@ -108,16 +108,34 @@ a.botao-login:hover {
 
 /* Responsividade */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
     .corpo-formulario {
-        flex-direction: column-reverse;
+        display: block;
+        flex-direction: column;
     }
 
     #formulario {
         line-height: 2;
+        width: 90%;
     }
 
     .formulario-login {
-        padding-bottom: 30px;
+        padding-bottom: 80px;
+        border-radius: 10px;
+    }
+
+    .formulario-login .campo-texto-formulario input {
+        width: 100%;
+    }
+
+    #imagem-login {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    #formulario {
+        width: 80%;
     }
 }
