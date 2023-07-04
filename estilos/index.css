@@ -59,23 +59,22 @@ html {
 
 .conteiner-carrossel {
     display: flex;
-    flex: 0;
+    flex: 1;
     flex-direction: column;
-    width: 524px;
+    /* width: 524px; */
     margin-bottom: 25px;
 }
 
 .carrossel img {
     border-radius: 14% 30%/73%;
-    width: 524px;
-    height: 400px;
     z-index: 10;
     transform: scale(1.0);
+    object-fit: fill;
 }
 
 .carrossel {
     display: grid;
-    width: 524px;
+    /* width: 524px; */
     /* https://css-tricks.com/css-only-carousel/ */
     overflow: hidden;
 }
@@ -85,7 +84,7 @@ html {
 }
 
 .carrossel div {
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .carrossel:hover {
@@ -151,5 +150,20 @@ html {
         flex-direction: column;
         gap: 30px;
         align-items: center;
+    }
+
+    .carrossel img {
+        width: unset;
+        height: 35vw;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 720px) {
+
+    .carrossel img {
+        width: unset;
+        height: 50vw;
     }
 }

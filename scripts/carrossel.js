@@ -57,29 +57,62 @@ function criarCarrossel(imagens) {
 }
 
 /* Inserindo animação do carrossel com função nativa do js*/
-let operacao = "";
 let numero = 1;
 
-setInterval(() => {
-    const imagem = document.getElementById(`imagem${numero}`);
+// setInterval(() => {
+//     const imagemAtual = document.getElementById(`imagem${numero}`);
+//     const proximoNumero = (numero >= imagens.length ? 1 : numero + 1);
+//     const proximaImagem = document.getElementById(`imagem${proximoNumero}`);
 
-    if (operacao === "sumir") {
-        imagem.className = "";
-        operacao = "";
-        numero = (numero >= imagens.length ? 1 : numero + 1);
-    } else {
-        if (operacao === "aparecer") {
-            operacao = "ficar"
-        } else if (operacao === "ficar") {
-            operacao = "sumir"
-        } else {
-            operacao = "aparecer";
-        }
+//     if (operacao === "sumir") {
+//         imagemAtual.className = "";
+//         operacao = "";
+//         numero = proximoNumero;
+//     } else {
+//         if (operacao === "aparecer") {
+//             operacao = "ficar"
+//         } else if (operacao === "ficar") {
+//             operacao = "sumir"
+//         } else {
+//             operacao = "aparecer";
+//         }
 
-        imagem.classList.add(operacao);
-    }
+//         imagemAtual.classList.add(operacao);
+//     }
+// }, 1000);
 
-    // console.log(operacao);
-}, 1000);
+// function recuperarImagem(numero) {
+//     const imagem = document.getElementById(`imagem${numero}`);
 
+//     return imagem;
+// }
+
+// const imagem1 = recuperarImagem(1);
+// animarImagem(imagem1);
+
+// function animarImagem(imagemAtual) {
+//     let operacao = "";
+
+//     const id = setInterval(() => {
+//         const proximoNumero = (numero >= imagens.length ? 1 : numero + 1);
+//         const proximaImagem = recuperarImagem(proximoNumero);
+
+//         if (operacao === "sumir") {
+//             imagemAtual.className = "";
+//             operacao = "";
+//             numero = proximoNumero;
+//             clearInterval(id);
+//         } else {
+//             if (operacao === "aparecer") {
+//                 operacao = "ficar"
+//                 animarImagem(proximaImagem);
+//             } else if (operacao === "ficar") {
+//                 operacao = "sumir";
+//             } else {
+//                 operacao = "aparecer";
+//             }
+//             imagemAtual.classList.add(operacao);
+//         }
+//     }, 1000);
+// }
 
