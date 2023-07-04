@@ -1,4 +1,4 @@
-main{
+main {
     background-color: #F7FDF3;
     padding: 40px 0;
 }
@@ -52,7 +52,6 @@ main{
 }
 
 .campo-texto-formulario {
-
     border-bottom: solid 1px gray;
 }
 
@@ -97,12 +96,28 @@ a.botao-login {
     text-align: center;
 }
 
-a.botao-login:hover{
+a.botao-login:hover {
     background-color: #ef0189;
-    color: white; 
+    color: white;
 }
 
 .esqueci-senha-email {
     text-align: center;
     font-size: 14px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1000px) {
+    .corpo-formulario {
+        flex-direction: column-reverse;
+    }
+
+    #formulario {
+        line-height: 2;
+    }
+
+    .formulario-login {
+        padding-bottom: 30px;
+    }
 }

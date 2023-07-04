@@ -104,6 +104,8 @@ address a:hover {
   color: #ef0189;
 }
 
+/* Responsividade */
+
 @media screen and (max-width: 1024px){
   .opcoes, .referencias {
       flex-direction: column;
