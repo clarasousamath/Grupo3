@@ -128,9 +128,7 @@ a.botao-login:hover {
         width: 100%;
     }
 
-    #imagem-login {
-        width: 100%;
-        height: 15rem;
+    #imagem-login {    
         border-bottom-left-radius: 0;
         border-top-right-radius: 10px;
     }
