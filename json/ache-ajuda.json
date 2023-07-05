@@ -1,0 +1,73 @@
+[
+    {
+        "estado": "São Paulo",
+        "locais": [
+            {
+                "nome": "CAPS SÃO AD III SÃO MATHEUS - ZONA LESTE",
+                "endereco": {
+                    "logradouro": "R. Joaquim Gouveia Franco",
+                    "numero": "150",
+                    "complemento" : "",
+                    "bairro": "São Mateus",
+                    "cidade": "São Paulo",
+                    "uf": "SP"
+                },
+                "telefones": [
+                    "(11) 2010-8146",
+                    "(11) 2019-8143"
+                ],
+                "link": "https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/atencao_basica/index.php?p=204204"
+            },
+            {
+                "nome": "CAPS AD II PINHEIROS - ZONA OESTE",
+                "endereco": {
+                    "logradouro": "R. Nicolau Gagliardi",
+                    "numero": "439",
+                    "complemento" : "",
+                    "bairro": "Pinheiros",
+                    "cidade": "São Paulo",
+                    "uf": "SP"
+                },
+                "telefones": [
+                    "(11) 3816-3959"
+                ],
+                "link": "https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/atencao_basica/index.php?p=204204" 
+            },
+            {
+                "nome": "CAPS AD III - CENTRO",
+                "endereco": {
+                    "logradouro": "R. Frederico Alvarenga",
+                    "numero": "259",
+                    "complemento" : "2° andar",
+                    "bairro": "Centro",
+                    "cidade": "São Paulo",
+                    "uf": "SP"
+                },
+                "telefones": [
+                    "(11) (11) 3241-0901",
+                    " (11)3241-5460"
+                ],
+                "link": "https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/atencao_basica/index.php?p=204204" 
+            }
+        ],
+        "profissionais": [
+            {
+                "nome": "João da Silva Psicólogo",
+                "especialidade": "Terapia Cogtivo-Comportamental",
+                "telefones": [
+                    "(99) 99999-9999"
+                ],
+                "email": "joao-da-silva-psicologo.psi.med.br"
+            },
+            {
+                "nome": "João da Silva Psicólogo",
+                "especialidade": "Terapia Cogtivo-Comportamental",
+                "telefones": [
+                    "(99) 99999-9999",
+                    "(99) 99999-9999"
+                ],
+                "email": "joao-da-silva-psicologo.psi.med.br"
+            }
+        ]
+    }
+]
