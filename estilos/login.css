@@ -22,7 +22,7 @@ main {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background: url('../imagens/login.jpg');
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     height: 60vh;
 }
@@ -39,6 +39,7 @@ main {
     display: flex;
     border-radius: 10px;
     box-shadow: -1px 0px 8px 0px rgb(82, 82, 82);
+    background-color: #004AAD;
 }
 
 .corpo-formulario>* {
