@@ -39,7 +39,6 @@ main {
     display: flex;
     border-radius: 10px;
     box-shadow: -1px 0px 8px 0px rgb(82, 82, 82);
-    background-color: #004AAD;
 }
 
 .corpo-formulario>* {
@@ -129,15 +128,22 @@ a.botao-login:hover {
         width: 100%;
     }
 
-    #imagem-login {    
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 10px;
+    #imagem-login {
+        background-size: cover;   
         height: 200px;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px){
+@media screen and (min-width: 601px) and (max-width: 1920px){
     #formulario {
-        width: 80%;
+        width: 70%;
+    }
+
+    #imagem-login {
+        background-size: cover;   
+        height: 380px;
+    }
+    .formulario-login .campo-texto-formulario input {
+        width: 90%;
     }
 }
