@@ -73,18 +73,18 @@ html {
 }
 
 .carrossel {
-    display: grid;
+    display: flex;
     /* width: 524px; */
     /* https://css-tricks.com/css-only-carousel/ */
     overflow: hidden;
 }
 
 .carrossel>div {
-    grid-area: 1 / 1 / 2 / 2;
+   flex: 0 0 100%;
 }
 
-.carrossel div {
-    /* opacity: 0; */
+.carrossel figure>img {
+   height: 400px;
 }
 
 .carrossel:hover {
