@@ -80,11 +80,11 @@ html {
 }
 
 .carrossel>div {
-   flex: 0 0 100%;
+    flex: 0 0 100%;
 }
 
 .carrossel figure>img {
-   height: 400px;
+    height: 350px;
 }
 
 .carrossel:hover {
@@ -152,18 +152,13 @@ html {
         align-items: center;
     }
 
-    .carrossel img {
-        width: unset;
-        height: 35vw;
+    .carrossel figure>img {
+        height: 300px;
     }
 }
 
-/* mobile */
-
 @media screen and (max-width: 720px) {
-
-    .carrossel img {
-        width: unset;
-        height: 50vw;
+    .carrossel figure>img {
+        height: 200px;
     }
 }
