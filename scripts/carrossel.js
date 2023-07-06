@@ -1,4 +1,4 @@
-// Informações relacionadas às imagens do carrossel
+/* Informações relacionadas às imagens do carrossel */
 const imagens = [
     {
         endereco: './imagens/index/tela-inicial-1.jpg',
@@ -17,12 +17,14 @@ const imagens = [
     }
 ];
 
-// Recuperando na DOM o conteiner do carrossel
+/* Recuperando na DOM o conteiner do carrossel */
 const conteinerCarrossel = document.querySelector('.conteiner-carrossel');
-const carrossel = document.querySelector(".carrossel");
 
-// Renderizando o carrossel
+/* Renderizando o carrossel */
 conteinerCarrossel.innerHTML = criarCarrossel(imagens);
+
+/* Recuperando na DOM o carrossel */
+const carrossel = document.querySelector(".carrossel");
 
 /**
  * Renderiza individualmente uma imagem do carrossel
