@@ -104,12 +104,46 @@ address a:hover {
   color: #ef0189;
 }
 
+.profissionais .cartao-profissional {
+  background-color: #38b6ff;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profissionais h4 {
+  color: white;
+  font-size: 30px;
+  flex: 4;
+  border-bottom: solid 1px #FEFEFE;
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profissionais .especialidade {
+  color: white;
+}
+
+.profissionais p {
+  font-size: 13px;
+}
+
 /* Responsividade */
 
-@media screen and (max-width: 1024px){
-  .opcoes, .referencias {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
+@media screen and (max-width: 1024px) {
+
+  .opcoes,
+  .referencias {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 }
