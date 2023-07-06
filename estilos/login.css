@@ -16,6 +16,7 @@ main {
     align-items: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding-bottom: 60px;
 }
 
 #imagem-login {
@@ -24,7 +25,6 @@ main {
     background: url('../imagens/login.jpg');
     background-size: 100% auto;
     background-position: center;
-    height: 60vh;
 }
 
 .titulo-formulario {
@@ -132,6 +132,7 @@ a.botao-login:hover {
     #imagem-login {    
         border-bottom-left-radius: 0;
         border-top-right-radius: 10px;
+        height: 200px;
     }
 }
 
