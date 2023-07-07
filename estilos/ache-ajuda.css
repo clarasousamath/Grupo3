@@ -113,6 +113,7 @@ address a:hover {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 60%;
 }
 
 .profissionais h4 {
@@ -136,6 +137,14 @@ address a:hover {
   font-size: 13px;
 }
 
+.referencias .aviso {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: goldenrod;
+}
+
 /* Responsividade */
 
 @media screen and (max-width: 1024px) {
@@ -145,5 +154,9 @@ address a:hover {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+
+  .profissionais .cartao-profissional {
+    width: 80%;
   }
 }
