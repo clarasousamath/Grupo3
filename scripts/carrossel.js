@@ -39,6 +39,32 @@ conteinerCarrossel.innerHTML = criarCarrossel(imagens);
 /* Recuperando na DOM o carrossel */
 const carrossel = document.querySelector(".carrossel");
 
+/* Recuperando os links de navegação do carrossel */
+const indicadores = document.getElementsByClassName('indicador');
+
+for (const indicador of indicadores) {
+    indicador.addEventListener('click', (event) => {
+        event.preventDefault();
+    });
+
+    indicador.addEventListener('focus', (event) => {
+        const href = event.target.getAttribute('href');
+        const imagem = document.querySelector(href);
+        const n = parseInt(href.slice(7));
+
+        numero = n;
+        atualizarIndicadores();
+        rolarCarrossel(imagem);
+
+        pausado = true;
+    });
+
+    indicador.addEventListener('blur', () => {
+        console.log('blur');
+        pausado = false;
+    });
+}
+
 /**
  * Renderiza individualmente uma imagem do carrossel
  * @param {{endereco: string, texto: string, descricao: string, titulo: string}} imagem 
@@ -80,7 +106,7 @@ function criarCarrossel(imagens) {
 
     let navegacao = "";
     for (var i = 1; i <= imagens.length; i++) {
-        navegacao += `<a class="indicador" href="#imagem${i}">&#9679;</a>`
+        navegacao += `<a class="indicador" tabindex="${i}" href="#imagem${i}">&#9679;</a>`
     }
 
     return `
@@ -101,24 +127,32 @@ let pausado = false;
 const animarCarrossel = () => {
     if (!pausado) {
         const imagem = document.getElementById(`imagem${numero}`);
-        const indicador = document.querySelectorAll(`.navegacao-carrossel .indicador`);
-        
-        indicador.forEach(it => {
-            if (it.href.endsWith(`#imagem${numero}`)) {
-                it.classList.add("selecionado");
-            } else {
-                it.classList.remove("selecionado");
-            }
-        })
 
-        carrossel.scroll({
-            left: imagem.getBoundingClientRect().width * (numero - 1),
-            behavior: 'smooth'
-        });
+        atualizarIndicadores();
+        rolarCarrossel(imagem);
 
+        /* Avança para a próxima imagem ou retorna para a primeira ao chegar ao fim */
         numero = (numero >= imagens.length ? 1 : numero + 1);
     }
+};
 
+function atualizarIndicadores() {
+    const indicador = document.querySelectorAll(`.navegacao-carrossel .indicador`);
+
+    indicador.forEach(it => {
+        if (it.href.endsWith(`#imagem${numero}`)) {
+            it.classList.add("selecionado");
+        } else {
+            it.classList.remove("selecionado");
+        }
+    });
+}
+
+function rolarCarrossel(imagem) {
+    carrossel.scroll({
+        left: imagem.getBoundingClientRect().width * (numero - 1),
+        behavior: 'smooth'
+    });
 };
 
 animarCarrossel();
