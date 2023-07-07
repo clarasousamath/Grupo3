@@ -166,7 +166,12 @@ html {
 }
 
 @media screen and (max-width: 720px) {
+    .texto-boas-vindas {
+        padding-top: 20px;
+    }
+
     .carrossel figure>img {
         height: 200px;
     }
+
 }
