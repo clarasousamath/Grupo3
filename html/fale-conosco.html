@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="../imagens/Icones-2/favicon.ico" type="image/x-icon" />
     <!-- Arquivo de reset de estilos dos navegadores -->
     <link rel="stylesheet" href="../estilos/reset.css">
+    <!-- Validador de formulário -->
+    <script src="../scripts/fale-conosco.js" defer></script>
     <!-- CSS do menu e rodapé -->
     <link rel="stylesheet" href="../estilos/menu-e-rodape.css">
     <!-- Google Fontes utilizado para o menu e rodapé -->
@@ -87,25 +89,25 @@
                 <h2 class="h2">Vamos conversar ?</h2>
                 <p>Este é o nosso formulário de contato. Sinta-se à vontade para sugestões e/ou elogios.
                 </p>
-                <form action="post">
-                    <label for="wname">Nome: *
-                        <input class="text-input" type="text" name="name" id="wname" minlength="8" maxlength="12"
+                <form id="form">
+                    <label for="name">Nome: *
+                        <input class="text-input" type="text" name="name" id="name" minlength="8" maxlength="12"
                         placeholder="Efraim" required>
                     </label>
-                    <label for="wsname">Sobrenome: *
-                        <input class="text-input" type="text" name="sname" id="wsname" minlength="8" maxlength="12"
+                    <label for="sname">Sobrenome: *
+                        <input class="text-input" type="text" name="sname" id="sname" minlength="8" maxlength="12"
                         placeholder="Rodrigues" required>
                     </label>
-                    <label for="wemail">E-mail: *
-                        <input class="text-input" type="email" name="email" id="wemail" minlength="15" maxlength="35"
+                    <label for="email">E-mail: *
+                        <input class="text-input" type="email" name="email" id="email" minlength="15" maxlength="35"
                         placeholder="email@gmail.com" autocomplete="email" required>
                     </label>
-                    <label for="wphone">Telefone: *
-                        <input class="text-input" type="tel" name="phone" id="wphone" minlength="8" maxlength="12"
+                    <label for="telefone">Telefone: *
+                        <input class="text-input" type="tel" name="telefone" id="telefone" minlength="8" maxlength="12"
                             placeholder="(xx)xxxxx-xxxx" required>
                     </label>
-                    <label for="wmsg">Mensagem: *
-                        <textarea class="text-input" name="msg" id="wmsg" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+                    <label for="msg">Mensagem: *
+                        <textarea class="text-input" name="msg" id="msg" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
                     </label>
                     <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox" required>
                     <label for="aceite-politicaseprivacidade">Declaro ter lido e aceito os
@@ -113,7 +115,7 @@
                             Termos de uso e Políticas de Privacidade.</a>
                     </label>
                     <div>
-                        <a class="botao" href="#">Enviar</a>
+                        <button type="submit">Enviar</button>
                     </div>
                 </form>
         </section>
