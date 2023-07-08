@@ -22,7 +22,7 @@ const imagens = [
         link: './html/artigos-e-mais.html'
     },
     {
-        endereco: './imagens/index/tela-inicial-3.jpg',
+        endereco: './imagens/index/tela-inicial-4.jpg',
         titulo: 'Sua atitude pode salvar vidas!',
         texto: 'Clique aqui e saiba como você pode ajudar nessa causa.',
         descricao: 'Imagem 3 da tela inicial do carrossel. Imagem de família em um jardim, com uma casa azul e uma cerca ao fundo da imagem e núvens e pássaros no céu. Mulher vestindo blusa vermelha, calça azul e descalça, fazendo o número quatro com as pernas e gesto de agradecimento com as mãos. Menina ao lado direito da mulher, em cima do tapete, vestindo uma blusa rosa clara e azul clara, também descalça, e espelhando a posição da mulher. Ao lado esquerdo da mulher, tem um menino vestindo camisa azul e calça vermelha, usando sapato azul, sentado na grama, brincando com cachorro branco com manchas caramelo. E nos dois lados da imagem, temos duas plantas e uma libélula.',
