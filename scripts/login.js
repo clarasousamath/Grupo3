@@ -7,7 +7,7 @@ formularioLogin.addEventListener('submit', (event) => {
     if (valido) {
     } else {
         event.preventDefault();
-        alert("Dados inválidos. Por favor, corrija e tente novamente!");
+        alert("Dados inválidos. Por favor, corrija-os e tente novamente!");
     }
 })
 
