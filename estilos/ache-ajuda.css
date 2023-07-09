@@ -143,6 +143,11 @@ address a:hover {
   text-align: center;
   font-weight: bold;
   color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: justify;
+  gap: 10px;
 }
 
 /* Responsividade */
