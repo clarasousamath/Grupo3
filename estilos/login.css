@@ -22,8 +22,8 @@ main {
 #imagem-login {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: url('../imagens/login.jpg');
-    background-size: 100% auto;
+    background: url('../imagens/login.jpg') no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -152,19 +152,13 @@ main {
     }
 
     #imagem-login {
-        background-size: cover;   
         height: 200px;
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1920px){
+@media screen and (min-width: 601px) and (max-width: 1024px){
     #formulario {
-        width: 70%;
-    }
-
-    #imagem-login {
-        background-size: cover;   
-        height: 380px;
+        width: 90%;
     }
     .formulario-login .campo-texto-formulario input {
         width: 90%;
