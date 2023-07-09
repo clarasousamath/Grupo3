@@ -75,7 +75,10 @@ function exibirInformacoes(estado) {
         `;
     } else {
         referencias.innerHTML = `
-            <p class="aviso"><i class="fa-solid fa-circle-info fa-xl"></i> Nenhum dado encontrado para o estado selecionado.</p>
+            <div class="aviso">
+                <span><i class="fa-solid fa-circle-info fa-xl"></i></span>
+                <span>Nenhum dado encontrado para o estado selecionado.</span>
+            </div>
         `;
     }
 }
