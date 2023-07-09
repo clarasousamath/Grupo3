@@ -134,6 +134,7 @@ main {
     resize: none;
     width: 100%;
 }
+
 .form select {
     border-radius: 10px;
     height: 2.4rem;
@@ -183,24 +184,50 @@ main {
     color: white;
     font-weight: bold;
     padding: 10px 35px;
+    border: none;
     border-radius: 20px;
-    text-decoration: none;
+    font-size: 16px;
 }
 
 .section-botoes .botao:hover {
     background-color: #ef0189;
 }
 
+.form-cadastro .input-box.erro input,
+.form-cadastro .input-box.erro select,
+.form-cadastro .input-box.erro textarea {
+    outline: solid 1px red;
+}
+
+.form-cadastro .mensagem-erro {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+    display: none;
+    margin-top: 2px;
+}
+
+.form-cadastro .campo-invalido .erro-invalido {
+    display: block;
+}
+
+.form-cadastro .campo-vazio .erro-obrigatorio {
+    display: block;
+}
+
 /* Responsividade */
 
 @media screen and (max-width: 800px) {
-    .cadastro, .input-group {
+
+    .cadastro,
+    .input-group {
         flex-direction: column;
     }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1280px) {
-    .input-group{
+    .input-group {
         flex-direction: column;
     }
 }
