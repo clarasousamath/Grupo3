@@ -44,10 +44,80 @@
                     "uf": "SP"
                 },
                 "telefones": [
-                    "(11) (11) 3241-0901",
-                    " (11)3241-5460"
+                    "(11) 3241-0901",
+                    "(11) 3241-5460"
                 ],
                 "link": "https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/atencao_basica/index.php?p=204204" 
+            }
+        ],
+        "profissionais": [
+            {
+                "nome": "João da Silva Psicólogo",
+                "especialidade": "Terapia Cogtivo-Comportamental",
+                "telefones": [
+                    "(99) 99999-9999"
+                ],
+                "email": "joao-da-silva-psicologo.psi.med.br"
+            },
+            {
+                "nome": "João da Silva Psicólogo",
+                "especialidade": "Terapia Cogtivo-Comportamental",
+                "telefones": [
+                    "(99) 99999-9999",
+                    "(99) 99999-9999"
+                ],
+                "email": "joao-da-silva-psicologo.psi.med.br"
+            }
+        ]
+    },
+    {
+        "nome": "Goiás",
+        "locais": [
+            {
+                "nome": "SAP - FACULDADE ESTÁCIO DE SÁ",
+                "endereco": {
+                    "logradouro": "AV. Goiás",
+                    "numero": "2151",
+                    "complemento" : "Localizada em Shopping Estação Goiânia",
+                    "bairro": "Setor Central",
+                    "cidade": "Goiânia",
+                    "uf": "GO"
+                },
+                "telefones": [
+                    "(62) 3623-4112"
+                ],
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLSekaMtX1j0uk2TIbkgPlBrO2MbEqgAyBlngOTkmUaA-LGM51g/viewform"
+            },
+            {
+                "nome": "FACULDADE PUC GOIÁS - GOIÂNIA",
+                "endereco": {
+                    "logradouro": "Rua 232",
+                    "numero": "128",
+                    "complemento" : "2º Andar, área V da PUC Goiás, CEP: 74.605-140",
+                    "bairro": "Setor Leste Universitário",
+                    "cidade": "Goiânia",
+                    "uf": "GO"
+                },
+                "telefones": [
+                    "(62) 3946-1198",
+                    "(62) 3946-1249"
+                ],
+                "link": "https://sites.pucgoias.edu.br/puc/cepsi/inscricoes-para-atendimento-psicologico/?fbclid=PAAaYWAr1Y-STwF-IJo6Dr_ffgtjZ3M4BS3wZc_TBR5t6fZZdiMzHO1mxGDaA" 
+            },
+            {
+                "nome": "ITGT - Instituto de Treinamento e Pesquisa em Gestalt-terapia de Goiânia",
+                "endereco": {
+                    "logradouro": "Rua 1128, Quadra 237 , Lote 09",
+                    "numero": "165",
+                    "complemento" : "2° andar",
+                    "bairro": "Setor Marista",
+                    "cidade": "Goiânia",
+                    "uf": "GO"
+                },
+                "telefones": [
+                    "(62) 3941-9798"
+                ],
+                "link": "https://itgt.com.br/" 
             }
         ],
         "profissionais": [
