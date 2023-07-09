@@ -51,7 +51,7 @@ main {
     margin-bottom: 20px;
 }
 
-.campo-texto-formulario {
+.campo-texto-formulario label.input {
     border-bottom: solid 1px gray;
 }
 
@@ -77,6 +77,44 @@ main {
     margin-bottom: 10px;
 }
 
+.formulario-login .campo-obrigatorio.erro label.input {
+    border-color: red;
+}
+
+.formulario-login .mensagem-erro {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+    display: none;
+    margin-top: 8px;
+}
+
+.formulario-login .campo-invalido .erro-invalido {
+    display: block;
+}
+
+.formulario-login .campo-vazio .erro-obrigatorio {
+    display: block;
+}
+
+.formulario-login .botao-login {
+    background-color: #004aad;
+    color: white;
+    font-weight: bold;
+    padding: 15px 36px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
+.formulario-login .botao-login:hover {
+    background-color: #ef0189;
+    color: white;
+}
+
 .formulario-login a {
     text-decoration: none;
     color: #262b73;
@@ -84,21 +122,6 @@ main {
 
 .formulario-login a:hover {
     color: #ef0189;
-}
-
-a.botao-login {
-    background-color: #004aad;
-    color: white;
-    font-weight: bold;
-    padding: 10px 35px;
-    border-radius: 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-a.botao-login:hover {
-    background-color: #ef0189;
-    color: white;
 }
 
 .esqueci-senha-email {

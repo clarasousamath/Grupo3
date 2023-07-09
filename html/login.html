@@ -21,12 +21,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Importando FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- JS de cookies -->
     <script src="../scripts/cookies.js" type="text/javascript" defer></script>
     <!-- JS do menu -->
     <script src="../scripts/menu.js" type="text/javascript" defer></script>
+    <!-- JS do login -->
+    <script src="../scripts/login.js" type="text/javascript" defer></script>
     <title>Raízes da Cura - Login</title>
 </head>
 
@@ -45,7 +47,8 @@
             <ul class="opcoes-menu">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                <li><a href="#" class="submenu-artigos">Artigos e Mais <i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+                <li><a href="#" class="submenu-artigos">Artigos e Mais <i
+                            class="fa-solid fa-chevron-down fa-2xs"></i></a>
                     <ul class="opcoes-submenu">
                         <li><a href="../html/artigos-e-mais.html">O que são doenças mentais?</a></li>
                         <li><a href="../html/submenu/ajuda.html">Como você pode ajudar?</a></li>
@@ -63,7 +66,7 @@
     </header>
 
     <main>
-        
+
         <section id="login">
             <div id="formulario">
                 <div class="corpo-formulario">
@@ -73,18 +76,24 @@
                         <div class="titulo-formulario">
                             <h1>Login</h1>
                         </div>
-                        <form method="post" autocomplete="on">
-                            <div class="campo-formulario campo-texto-formulario">
+                        <form method="post" autocomplete="on" id="formularioLogin" novalidate>
+                            <div class="campo-formulario campo-texto-formulario campo-obrigatorio">
                                 <label for="wlogin">E-mail
                                 </label>
                                 <label class="input">
                                     <i class="fa-solid fa-envelope"></i>
                                     <input type="email" name="login" id="wlogin" placeholder="Digite seu e-mail"
-                                        autocomplete="email" required>
+                                        autocomplete="email" autofocus required>
                                 </label>
+                                <div class="mensagem-erro erro-obrigatorio">
+                                    * O campo é obrigatório.
+                                </div>
+                                <div class="mensagem-erro erro-invalido">
+                                    * O e-mail informado é inválido.
+                                </div>
                             </div>
 
-                            <div class="campo-formulario campo-texto-formulario">
+                            <div class="campo-formulario campo-texto-formulario campo-obrigatorio">
                                 <label for="wsenha">Senha
                                 </label>
                                 <label class="input">
@@ -92,9 +101,15 @@
                                     <input type="password" name="senha" id="wsenha" placeholder="Digite sua senha"
                                         autocomplete="current-password" minlength="6" maxlength="20" required>
                                 </label>
+                                <div class="mensagem-erro erro-obrigatorio">
+                                    * O campo é obrigatório.
+                                </div>
+                                <div class="mensagem-erro erro-invalido">
+                                    * A senha informada é inválida.
+                                </div>
                             </div>
                             <div class="campo-formulario">
-                                <a class="botao-login" href="">Login</a>
+                                <button class="botao-login" href="">Login</button>
                             </div>
                             <div class="esqueci-senha-email">
                                 <a href="#" class="esqueci-senha">
@@ -122,7 +137,7 @@
                     alt="Logo do LinkedIn"></a>
         </div>
         <div class="copyright">
-            <p><a href="./politicaseprivacidade.html#copyright">&copy; Copyright Raízes da Cura</a> 
+            <p><a href="./politicaseprivacidade.html#copyright">&copy; Copyright Raízes da Cura</a>
             </p>
             <p><a href="https://github.com/clarasousamath/Grupo3" target="_blank">Todos os direitos reservados</a></p>
         </div>
@@ -150,7 +165,7 @@
 
     <div class="ir-topo">
         <a href="#"><i class="fa-solid fa-circle-arrow-up fa-2xl"></i></a>
-     </div> 
+    </div>
 
     <div class="cookies">
         <div class="cookies-texto">
