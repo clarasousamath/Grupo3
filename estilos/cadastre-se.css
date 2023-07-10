@@ -121,6 +121,30 @@ main {
     border-radius: 10px;
 }
 
+.form-cadastro #forcaSenha {
+    font-size: 13px;
+    color: #FEFEFE;
+    font-style: italic;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.form-cadastro #forcaSenha.forte {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.form-cadastro #forcaSenha.media {
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+}
+
+.form-cadastro #forcaSenha.fraca {
+    background-color: red;
+    border-radius: 10px;
+}
+
 .form-cadastro textarea {
     display: flex;
     flex: 1;
@@ -139,7 +163,6 @@ main {
     border-radius: 10px;
     height: 2.4rem;
     margin: 0.8rem 0;
-    /* height: 2.4rem; */
     width: 14.8rem;
     border: none;
     outline: none;
