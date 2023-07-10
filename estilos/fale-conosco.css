@@ -85,18 +85,37 @@ h4 {
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1.1px;
 }
+.h2::after {
+    background-color: #004aad;
+    content: '';
+    display: block;
+    width: 7rem;
+    height: 0.3rem;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 13px;
+}
 main > section > div > form {
     margin-top: 1.3rem;
     font-size: 14px;
     font-weight: 400;
 }
+.obrigatorio {
+    display: none;
+}
 .text-input {
     width: 380px;
+    outline: none;
     border-radius: 10px;
     padding: 0.7rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     border: none;
+    transition: .5s;
+}
+.text-input:focus {
+    border: 1px solid;
+    border-color: #ef0189;
 }
 .a2 {
     color: #004aad;
@@ -149,10 +168,17 @@ button:hover {
         width: 70%;
         box-shadow: 1px 8px 8px 0px rgb(82, 82, 82);
     }
+    h2 {
+        font-size: 18px;
+    }
     .h2 {
-        font-size: 25px;
+        font-size: 23px;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1.1px;
+    }
+    .h2::after {
+        margin-top: 8px;
+        width: 4.5rem;
     }
     main > section > div > form {
         font-size: 12px;
@@ -211,5 +237,10 @@ button:hover {
         font-size: 30px;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1.1px;
+    }
+    .h2::after {
+        margin: auto;
+        margin-top: 12px;
+        position: relative;
     }
 }

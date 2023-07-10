@@ -117,8 +117,15 @@ main {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     padding: 0.6rem 2.5rem;
-    border: none;
+    border: 0px;
+    outline: 0px;
     border-radius: 10px;
+    transition: .5s;
+}
+
+.input-box input:focus {
+    border: 1px solid;
+    border-color: #EF0189;
 }
 
 .form-cadastro #forcaSenha {
@@ -157,6 +164,11 @@ main {
     font-size: 16px;
     resize: none;
     width: 100%;
+    transition: .5s;
+}
+.form-cadastro textarea:focus {
+    border: 1px solid;
+    border-color: #EF0189;
 }
 
 .form select {
@@ -167,6 +179,11 @@ main {
     border: none;
     outline: none;
     display: flex;
+    transition: .5s;
+}
+.form select:focus {
+    border: 1px solid;
+    border-color: #EF0189;
 }
 
 .input-box label,

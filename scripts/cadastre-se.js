@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
         alert("Cadastro realizado com sucesso!")
     } else {
         event.preventDefault();
-        alert("Dados inválidos. Por favor, corrija-os e tente novamente!");
+        alert("Dados inválidos. Por favor preencher os campos obrigatórios e tente novamente!");
     }
 });
 
