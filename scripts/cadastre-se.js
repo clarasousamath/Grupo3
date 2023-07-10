@@ -175,8 +175,8 @@ function forcaSenha(senha) {
     const soNumeros = senha.replace(/\D/gi, '') === senha;
     const soLetras = senha.replace(/[a-z]/gi, '') === '';
     const temNumero = senha.replace(/\D/gi, '').length > 0;
-    const temMaiuscula = senha.replace(/[a-z]/g, '').length > 0;
-    const temMinuscula = senha.replace(/[A-Z]/g, '').length > 0;
+    const temMaiuscula = senha.replace(/[A-Z]/g, '').length < senha.length;
+    const temMinuscula = senha.replace(/[a-z]/g, '').length < senha.length;
     const temEspeciais = senha.replace(/\w/gi, '').length > 0;
 
     if (soNumeros || soLetras) {
