@@ -3,6 +3,7 @@ const form = document.querySelector('#formularioCadastro');
 const celular = document.querySelector('#number');
 const senha = document.querySelector('#password');
 const confirmacaoSenha = document.querySelector('#confirmepassword');
+const forcaDaSenha = document.querySelector('#forcaSenha');
 
 // Ouvir o evento de submissão do formulário
 form.addEventListener('submit', (event) => {
@@ -27,6 +28,18 @@ celular.addEventListener('beforeinput', (event) => {
 
 celular.addEventListener('keypress', (event) => {
     celular.value = formatarTelefone(celular.value.replace(/\D/g, ''));
+});
+
+senha.addEventListener('keyup', (event) => {
+    const forca = forcaSenha(senha.value);
+    forcaDaSenha.className = '';
+
+    if (forca === '') {
+        forcaDaSenha.innerHTML = '';
+    } else {
+        forcaDaSenha.classList.add(forca);
+        forcaDaSenha.innerHTML = `A força da senha é ${forca === 'media' ? 'média' : forca}`;
+    }
 });
 
 /**
@@ -144,4 +157,33 @@ function buscarInput(campo) {
     return campo.querySelector('input') ||
         campo.querySelector('textarea') ||
         campo.querySelector('select');
+}
+
+/**
+ * Detecta a força da senha.
+ * @param {string} senha 
+ */
+function forcaSenha(senha) {
+    if (senha.length === 0) {
+        return '';
+    }
+
+    if (senha.length < 6) {
+        return 'fraca';
+    }
+
+    const soNumeros = senha.replace(/\D/gi, '') === senha;
+    const soLetras = senha.replace(/[a-z]/gi, '') === '';
+    const temNumero = senha.replace(/\D/gi, '').length > 0;
+    const temMaiuscula = senha.replace(/[a-z]/g, '').length > 0;
+    const temMinuscula = senha.replace(/[A-Z]/g, '').length > 0;
+    const temEspeciais = senha.replace(/\w/gi, '').length > 0;
+
+    if (soNumeros || soLetras) {
+        return 'fraca';
+    } else if (temNumero && temMaiuscula && temMinuscula && temEspeciais) {
+        return 'forte';
+    } else {
+        return 'media';
+    }
 }
