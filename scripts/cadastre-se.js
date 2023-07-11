@@ -51,10 +51,10 @@ function formatarTelefone(texto) {
     if (texto.length >= 2) {
         const ddd = texto.substring(0, 2);
         const parte1 = texto.substring(2, 6);
-        const parte2 = texto.substring(6);
+        const parte2 = texto.substring(6,10);
 
         if (parte2) {
-            if (texto.length <= 10) {
+            if (texto.length < 10) {
                 return `(${ddd}) ${parte1}-${parte2}`;
             } else {
                 const parte1 = texto.substring(2, 7);
