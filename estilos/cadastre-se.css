@@ -112,13 +112,27 @@ main {
     flex-direction: column;
     margin-bottom: 1rem;
 }
+.p-campos{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 11px;
+    font-style: italic;
+    color: red;
+}
 
 .input-box input {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     padding: 0.6rem 2.5rem;
-    border: none;
+    border: 0px;
+    outline: 0px;
     border-radius: 10px;
+    transition: .4s;
+}
+
+.input-box input:focus {
+    border: 2px solid;
+    border-color: #004AAD;
 }
 
 .form-cadastro #forcaSenha {
@@ -157,6 +171,11 @@ main {
     font-size: 16px;
     resize: none;
     width: 100%;
+    transition: .4s;
+}
+.form-cadastro textarea:focus {
+    border: 2px solid;
+    border-color: #004AAD;
 }
 
 .form select {
@@ -167,6 +186,11 @@ main {
     border: none;
     outline: none;
     display: flex;
+    transition: .4s;
+}
+.form select:focus {
+    border: 2px solid;
+    border-color: #004AAD;
 }
 
 .input-box label,
@@ -242,7 +266,9 @@ main {
 /* Responsividade */
 
 @media screen and (max-width: 800px) {
-
+    .form select {
+        width: auto;
+    }
     .cadastro,
     .input-group {
         flex-direction: column;
@@ -250,6 +276,9 @@ main {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1280px) {
+    .form select {
+        width: auto;
+    }
     .input-group {
         flex-direction: column;
     }
