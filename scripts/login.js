@@ -5,6 +5,8 @@ formularioLogin.addEventListener('submit', (event) => {
     const valido = validarFormulario();
 
     if (valido) {
+        //Como ainda não temos backend, somente exibiremos a mensagem de sucesso no login.
+        alert("Login realizado com sucesso!")
     } else {
         event.preventDefault();
         alert("Dados inválidos. Por favor, corrija-os e tente novamente!");
