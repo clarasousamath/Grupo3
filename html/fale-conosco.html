@@ -91,33 +91,33 @@
                 </p>
                 <p class="p-campos">* Campos Obrigatórios</p>
                 <form id="formulario">
-                    <div>Nome: *
+                    <div id="div">Nome: *
                         <input class="text-input requerido" type="text" name="name" id="name" minlength="4" maxlength="18"
                         placeholder="Digite seu nome:" oninput="nameValidate()">
                         <span class="obrigatorio">Nome deve ter no mínimo 4 caracteres!</span>
                     </div>
-                    <div>Sobrenome: *
+                    <div id="div">Sobrenome: *
                         <input class="text-input requerido" type="text" name="sname" id="sname" minlength="4" maxlength="18"
                         placeholder="Digite seu sobrenome:" oninput="nameValidate2()">
                         <span class="obrigatorio">Sobrenome deve ter no mínimo 4 caracteres!</span>
                     </div>
-                    <div>E-mail: *
+                    <div id="div">E-mail: *
                         <input class="text-input requerido" type="email" name="email" id="email" minlength="15" maxlength="35"
                         placeholder="Digite seu e-mail:" autocomplete="email" oninput="emailValidate()">
                         <span class="obrigatorio">Digite um e-mail válido!</span>
                     </div>
-                    <div>Telefone:
+                    <div id="div">Telefone:
                         <input class="text-input requerido" type="tel" name="telefone" id="telefone"
-                        placeholder="(xx) xxxxx-xxxx" pattern="[0-9]{2}[0-9]{9}" oninput="telefoneValidate()">
+                        placeholder="(xx) xxxxx-xxxx" oninput="telefoneValidate()">
                         <span class="obrigatorio">Digite somente números - DDD com 2 dígitos e número com 8 ou 9 dígitos!</span>
                     </div>
-                    <div>Mensagem:
+                    <div id="div">Mensagem:
                         <textarea class="text-input requerido" name="msg" id="msg" cols="30" rows="10" placeholder="Digite o motivo do contato aqui..." oninput="mensagemValidate()"></textarea>
                         <span class="obrigatorio">Favor escrever o motivo do seu contato!</span>
                     </div>
-                    <div class="checkbox">
+                    <div id="div" class="checkbox">
                         <div>
-                            <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox">
+                            <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox" onkeypress="checkboxValidate()">
                                 <p>Declaro ter lido e aceito os
                                     <a class="a2" href="./politicaseprivacidade.html">
                                         Termos de uso e Políticas de Privacidade.
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div>
-                        <button type="submit">Enviar</button>
+                        <button id="enviar" type="submit">Enviar</button>
                     </div>
                 </form>
         </section>
