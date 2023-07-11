@@ -57,7 +57,7 @@ function emailValidate (){
     }
 }
 
-//Validando Telefone:
+//Validando Tamanho do Campo Telefone:
 function telefoneValidate (){
     if(campos[3].value.length < 8){
         setError(3);
@@ -67,7 +67,7 @@ function telefoneValidate (){
     }
 }
 
-// Valida número de telefone.
+// Valida e bloqueia outras entradas que não sejam números:
 telefone.addEventListener('beforeinput', (event) => {
     if (event.data && '0123456789'.indexOf(event.data) < 0) {
         event.preventDefault();
@@ -89,7 +89,7 @@ function formatarTelefone(texto) {
     if (texto.length >= 2) {
         const ddd = texto.substring(0, 2);
         const parte1 = texto.substring(2, 6);
-        const parte2 = texto.substring(6,10);
+        const parte2 = texto.substring(6);
 
         if (parte2) {
             if (texto.length < 10) {
@@ -121,3 +121,5 @@ function mensagemValidate (){
         removerErro(4);
     }
 }
+
+//Validando Marcação do Checkbox:
