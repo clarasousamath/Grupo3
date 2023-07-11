@@ -1,7 +1,9 @@
-const form = document.getElementById("formulario");
+const form = document.querySelector("#formulario");
 const campos = document.querySelectorAll(".requerido");
 const telefone = document.querySelector("#telefone");
 const spans = document.querySelectorAll(".obrigatorio");
+const camposObrigatorios = document.getElementById("#div");
+
 //Validador de e-mail:
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -121,5 +123,3 @@ function mensagemValidate (){
         removerErro(4);
     }
 }
-
-//Validando Marcação do Checkbox:
