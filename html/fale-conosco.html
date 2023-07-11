@@ -89,37 +89,39 @@
                 <h2 class="h2">Vamos conversar ?</h2>
                 <p>Este é o nosso formulário de contato. Sinta-se à vontade para sugestões e/ou elogios.
                 </p>
+                <p class="p-campos">* Campos Obrigatórios</p>
                 <form id="formulario">
-                    <div>Nome:
-                        <input class="text-input" type="text" name="name" id="name" minlength="4" maxlength="12"
-                        placeholder="Digite seu nome:" required>
-                        <span class="obrigatorio">Nome é obrigatório e deve ter no mínimo 4 caracteres!</span>
+                    <div>Nome: *
+                        <input class="text-input requerido" type="text" name="name" id="name" minlength="4" maxlength="18"
+                        placeholder="Digite seu nome:" oninput="nameValidate()">
+                        <span class="obrigatorio">Nome deve ter no mínimo 4 caracteres!</span>
                     </div>
-                    <div>Sobrenome:
-                        <input class="text-input" type="text" name="sname" id="sname" minlength="4" maxlength="12"
-                        placeholder="Digite seu sobrenome:" required>
-                        <span class="obrigatorio">Sobrenome é obrigatório e deve ter no mínimo 4 caracteres!</span>
+                    <div>Sobrenome: *
+                        <input class="text-input requerido" type="text" name="sname" id="sname" minlength="4" maxlength="18"
+                        placeholder="Digite seu sobrenome:" oninput="nameValidate2()">
+                        <span class="obrigatorio">Sobrenome deve ter no mínimo 4 caracteres!</span>
                     </div>
-                    <div>E-mail:
-                        <input class="text-input" type="email" name="email" id="email" minlength="15" maxlength="35"
-                        placeholder="Digite seu e-mail:" autocomplete="email" required>
+                    <div>E-mail: *
+                        <input class="text-input requerido" type="email" name="email" id="email" minlength="15" maxlength="35"
+                        placeholder="Digite seu e-mail:" autocomplete="email" oninput="emailValidate()">
                         <span class="obrigatorio">Digite um e-mail válido!</span>
                     </div>
                     <div>Telefone:
-                        <input class="text-input" type="tel" name="telefone" id="telefone" minlength="9" maxlength="12"
-                        placeholder="(xx) xxxxx-xxxx" required>
-                        <span class="obrigatorio">Digite somente números com DDD com 2 dígitos e número com 8 ou 9 números!</span>
+                        <input class="text-input requerido" type="tel" name="telefone" id="telefone" minlength="9" maxlength="12"
+                        placeholder="(xx) xxxxx-xxxx" pattern="[0-9]{2}[0-9]{9}" oninput="telefoneValidate()">
+                        <span class="obrigatorio">Digite somente números - DDD com 2 dígitos e número com 8 ou 9 dígitos!</span>
                     </div>
                     <div>Mensagem:
-                        <textarea class="text-input" name="msg" id="msg" cols="30" rows="10" placeholder="Digite o motivo do contato aqui..."></textarea>
+                        <textarea class="text-input requerido" name="msg" id="msg" cols="30" rows="10" placeholder="Digite o motivo do contato aqui..." oninput="mensagemValidate()"></textarea>
                         <span class="obrigatorio">Favor escrever o motivo do seu contato!</span>
                     </div>
                     <div class="checkbox">
                         <div>
-                            <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox" required>
+                            <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox">
                             <p>Declaro ter lido e aceito os
                                 <a class="a2" href="./politicaseprivacidade.html">
-                                    Termos de uso e Políticas de Privacidade.</a>
+                                    Termos de uso e Políticas de Privacidade.
+                                </a>
                             </p>
                         </div>
                     </div>

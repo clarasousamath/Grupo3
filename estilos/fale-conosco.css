@@ -95,13 +95,23 @@ h4 {
     border-radius: 10px;
     margin-top: 13px;
 }
+.p-campos{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 11px;
+    font-style: italic;
+    color: red;
+}
 main > section > div > form {
-    margin-top: 1.3rem;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: bolder;
 }
 .obrigatorio {
     display: none;
+    margin: -8px 0 10px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
 }
 .text-input {
     width: 380px;
@@ -111,11 +121,15 @@ main > section > div > form {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     border: none;
-    transition: .5s;
+    transition: .3s;
 }
 .text-input:focus {
-    border: 1px solid;
-    border-color: #ef0189;
+    border: 2px solid;
+    border-color: #004aad;
+}
+main > section > div > form > div > div {
+    display: flex;
+    align-items: baseline;
 }
 .a2 {
     color: #004aad;
@@ -182,7 +196,7 @@ button:hover {
     }
     main > section > div > form {
         font-size: 12px;
-        font-weight: 400;
+        font-weight: bolder;
     }
     .text-input {
         width: 95%;
@@ -228,7 +242,7 @@ button:hover {
     }
     main > section > div > form {
         font-size: 14px;
-        font-weight: 400;
+        font-weight: bolder;
     }
     .text-input {
         width: 95%;
