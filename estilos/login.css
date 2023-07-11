@@ -108,6 +108,7 @@ main {
     text-align: center;
     border: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .formulario-login .botao-login:hover {

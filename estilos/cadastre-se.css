@@ -234,6 +234,7 @@ main {
     border: none;
     border-radius: 20px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .section-botoes .botao:hover {
