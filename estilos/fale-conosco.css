@@ -54,7 +54,7 @@ h4 {
     list-style-type: disc;
     margin-left: 0.9rem;
 }
-.div02 {
+.form-cadastro {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: left;
@@ -106,15 +106,6 @@ main > section > div > form {
     font-size: 14px;
     font-weight: bolder;
 }
-.obrigatorio {
-    display: none;
-    margin: -8px 0 10px 0;
-    font-size: 12px;
-    font-weight: 400;
-    color: red;
-    font-weight: bold;
-    font-style: italic;
-}
 .text-input {
     width: 380px;
     outline: none;
@@ -156,6 +147,30 @@ button:hover {
     background-color: #ef0189;
 }
 
+.form-cadastro .input-box.erro input,
+.form-cadastro .input-box.erro select,
+.form-cadastro .input-box.erro textarea {
+    outline: solid 1px red;
+}
+
+.form-cadastro .mensagem-erro {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+    display: none;
+    margin-top: 2px;
+}
+
+.form-cadastro .campo-invalido .erro-invalido {
+    display: block;
+}
+
+.form-cadastro .campo-vazio .erro-obrigatorio {
+    display: block;
+}
+
+
 /* Media Query = Mobile */
 
 @media screen and (min-width: 255px) and (max-width: 520px) {
@@ -176,7 +191,7 @@ button:hover {
         margin-bottom: 0px;
         width: 70%;
     }
-    .div02 {
+    .form-cadastro {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 0px;
@@ -231,7 +246,7 @@ button:hover {
     .ul-endereco {
         list-style: none;
     }
-    .div02 {
+    .form-cadastro {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 0px;
