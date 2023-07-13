@@ -1,85 +1,30 @@
-const form = document.querySelector("#formulario");
-const campos = document.querySelectorAll(".requerido");
-const telefone = document.querySelector("#telefone");
-const spans = document.querySelectorAll(".obrigatorio");
-const camposObrigatorios = document.getElementById("#div");
+const camposObrigatorios = document.getElementsByClassName('input-box');
+const form = document.querySelector('#formularioCadastro');
+const celular = document.querySelector('#telefone');
 
-//Validador de e-mail:
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Ouvir o evento de submissão do formulário
+form.addEventListener('submit', (event) => {
+    const valido = validarFormulario();
 
-//Validando todo o formulário:
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    nameValidate();
-    nameValidate2();
-    emailValidate();
-    telefoneValidate();
-    mensagemValidate();
+    if (valido) {
+        alert("Cadastro realizado com sucesso!")
+    } else {
+        event.preventDefault();
+        alert("Dados inválidos. Por favor preencher os campos obrigatórios e tente novamente!");
+    }
 });
 
-//Chamando o erro na interação de validação:
-function setError(index){
-    campos[index].style.border = "2px solid red";
-    spans[index].style.display = "block";
-}
-
-//Removendo erro de validação:
-function removerErro(index){
-    campos[index].style.border = "";
-    spans[index].style.display = "none";
-}
-
-//Validando Tamanho do Campo Nome:
-function nameValidate (){
-    if(campos[0].value.length < 4){
-        setError(0);
-    }
-    else {
-        removerErro(0);
-    }
-}
-
-//Validando Tamanho do Campo Sobrenome:
-function nameValidate2 (){
-    if(campos[1].value.length < 4){
-        setError(1);
-    }
-    else {
-        removerErro(1);
-    }
-}
-
-//Validando E-mail:
-function emailValidate (){
-    if(emailRegex.test(campos[2].value)){
-        removerErro(2);
-    }
-    else {
-        setError(2);
-    }
-}
-
-//Validando Tamanho do Campo Telefone:
-function telefoneValidate (){
-    if(campos[3].value.length < 8){
-        setError(3);
-    }
-    else {
-        removerErro(3);
-    }
-}
-
-// Valida e bloqueia outras entradas que não sejam números:
-telefone.addEventListener('beforeinput', (event) => {
+// Valida número de telefone.
+celular.addEventListener('beforeinput', (event) => {
     if (event.data && '0123456789'.indexOf(event.data) < 0) {
         event.preventDefault();
-    } else if (event.data && telefone.value.length > 14) {
+    } else if (event.data && celular.value.length > 14) {
         event.preventDefault();
     }
 });
 
-telefone.addEventListener('keypress', (event) => {
-    telefone.value = formatarTelefone(telefone.value.replace(/\D/g, ''));
+celular.addEventListener('keypress', (event) => {
+    celular.value = formatarTelefone(celular.value.replace(/\D/g, ''));
 });
 
 /**
@@ -91,7 +36,7 @@ function formatarTelefone(texto) {
     if (texto.length >= 2) {
         const ddd = texto.substring(0, 2);
         const parte1 = texto.substring(2, 6);
-        const parte2 = texto.substring(6);
+        const parte2 = texto.substring(6,10);
 
         if (parte2) {
             if (texto.length < 10) {
@@ -114,12 +59,76 @@ function formatarTelefone(texto) {
     }
 }
 
-//Validando Texto da Mensagem:
-function mensagemValidate (){
-    if(campos[4].value.length < 4){
-        setError(4);
+/**
+ * Função que valida formulário
+ * @returns retorna se o formulário está válido.
+ */
+function validarFormulario() {
+    let formularioValido = true;
+
+    for (const campo of camposObrigatorios) {
+        const input = buscarInput(campo);
+        const expEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (input.type) {
+            // O usuário preencheu o campo
+            if (input.value) {
+                campo.classList.remove('campo-vazio');
+                campo.classList.remove('erro');
+
+                // O e-mail preenchido é válido
+                if (input.type === 'email') {
+                    if (expEmail.test(input.value)) {
+                        campo.classList.remove('campo-invalido');
+                        campo.classList.remove('erro');
+                    } else {
+                        campo.classList.add('campo-invalido');
+                        campo.classList.add('erro');
+                        formularioValido = false;
+                    }
+                }
+
+                // Valida o telefone 
+                if (input === celular) {
+                    if (input.value.length < 14) {
+                        campo.classList.add('campo-invalido');
+                        campo.classList.add('erro');
+                        formularioValido = false;
+                    } else {
+                        campo.classList.remove('campo-invalido');
+                        campo.classList.remove('erro');
+                    }
+                }
+
+            } else if (input.type === 'checkbox') {
+                // Verifica se o checkbox foi marcado
+                if (input.checked) {
+                    campo.classList.remove('campo-vazio');
+                    campo.classList.remove('erro');
+                } else {
+                    campo.classList.add('campo-vazio');
+                    campo.classList.add('erro');
+                    formularioValido = false;
+                }
+
+            } else {
+                // Campo não preenchido.
+                campo.classList.add('campo-vazio');
+                campo.classList.add('erro');
+                formularioValido = false;
+            }
+        }
     }
-    else {
-        removerErro(4);
-    }
+    return formularioValido;
+}
+
+/**
+ * Função que recupera o input
+ * @param {HTMLDivElement} campo 
+ * @returns retorna o input html que o usuário interagiu/preencheu.
+ */
+function buscarInput(campo) {
+    return campo.querySelector('input') ||
+        campo.querySelector('textarea') ||
+        campo.querySelector('select');
 }

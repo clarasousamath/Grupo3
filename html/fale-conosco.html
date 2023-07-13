@@ -85,48 +85,56 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <div class="div02">
+            <div class="form-cadastro">
                 <h2 class="h2">Vamos conversar ?</h2>
                 <p>Este é o nosso formulário de contato. Sinta-se à vontade para sugestões e/ou elogios.
                 </p>
                 <p class="p-campos">* Campos Obrigatórios</p>
-                <form id="formulario">
-                    <div id="div">Nome: *
-                        <input class="text-input requerido" type="text" name="name" id="name" minlength="4" maxlength="18"
-                        placeholder="Digite seu nome:" oninput="nameValidate()">
-                        <span class="obrigatorio">Nome deve ter no mínimo 4 caracteres!</span>
+                <form action="#" id="formularioCadastro" novalidate>
+
+                    <div class="input-box">Nome: *
+                        <input class="text-input" type="text" name="name" id="name" minlength="4" maxlength="18"
+                        placeholder="Digite seu nome:" required>
+                        <span class="mensagem-erro erro-obrigatorio">* Nome deve ter no mínimo 4 caracteres!</span>
                     </div>
-                    <div id="div">Sobrenome: *
-                        <input class="text-input requerido" type="text" name="sname" id="sname" minlength="4" maxlength="18"
-                        placeholder="Digite seu sobrenome:" oninput="nameValidate2()">
-                        <span class="obrigatorio">Sobrenome deve ter no mínimo 4 caracteres!</span>
+
+                    <div class="input-box">Sobrenome: *
+                        <input class="text-input" type="text" name="sname" id="sname" minlength="4" maxlength="18"
+                        placeholder="Digite seu sobrenome:" required>
+                        <span class="mensagem-erro erro-obrigatorio">* Sobrenome deve ter no mínimo 4 caracteres!</span>
                     </div>
-                    <div id="div">E-mail: *
-                        <input class="text-input requerido" type="email" name="email" id="email" minlength="15" maxlength="35"
-                        placeholder="Digite seu e-mail:" autocomplete="email" oninput="emailValidate()">
-                        <span class="obrigatorio">Digite um e-mail válido!</span>
+
+                    <div class="input-box">E-mail: *
+                        <input class="text-input" type="email" name="email" id="email" minlength="15" maxlength="35"
+                        placeholder="Digite seu e-mail:" autocomplete="email" required>
+                        <span class="mensagem-erro erro-obrigatorio">* Digite um e-mail válido!</span>
                     </div>
-                    <div id="div">Telefone:
-                        <input class="text-input requerido" type="tel" name="telefone" id="telefone"
-                        placeholder="(xx) xxxxx-xxxx" oninput="telefoneValidate()">
-                        <span class="obrigatorio">Digite somente números - DDD com 2 dígitos e número com 8 ou 9 dígitos!</span>
+
+                    <div class="input-box">Telefone:
+                        <input class="text-input" type="tel" name="telefone" id="telefone"
+                        placeholder="(xx) xxxxx-xxxx" required>
+                        <span class="mensagem-erro erro-obrigatorio">* Digite somente números - DDD com 2 dígitos e número com 8 ou 9 dígitos!</span>
                     </div>
-                    <div id="div">Mensagem:
-                        <textarea class="text-input requerido" name="msg" id="msg" cols="30" rows="10" placeholder="Digite o motivo do contato aqui..." oninput="mensagemValidate()"></textarea>
-                        <span class="obrigatorio">Favor escrever o motivo do seu contato!</span>
+
+                    <div class="input-box">Mensagem:
+                        <textarea class="text-input" name="msg" id="msg" cols="30" rows="10" placeholder="Digite o motivo do contato aqui..." required></textarea>
+                        <span class="mensagem-erro erro-obrigatorio">* Favor escrever o motivo do seu contato!</span>
                     </div>
-                    <div id="div" class="checkbox">
-                        <div>
-                            <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox" onkeypress="checkboxValidate()">
-                                <p>Declaro ter lido e aceito os
-                                    <a class="a2" href="./politicaseprivacidade.html">
-                                        Termos de uso e Políticas de Privacidade.
-                                    </a>
-                                </p>
-                                <span class="obrigatorio">Campo obrigatório. Para prosseguir com o cadastro,
-                                    é necessário ler e concordar com os termos de uso e políticas de privacidade.</span>
+
+                    <div class="input-box">
+                        <label for="aceite-politicaseprivacidade">
+                            <input type="checkbox" id="aceite-politicaseprivacidade" name="checkbox" value=""
+                                required>
+                            Declaro ter lido e aceito os
+                            <a class="a2" href="./politicaseprivacidade.html">
+                                Termos de uso e Políticas de Privacidade.</a>
+                        </label>
+                        <div class="mensagem-erro erro-obrigatorio">
+                            * Campo obrigatório. Para prosseguir com o cadastro,
+                            é necessário ler e concordar com os termos de uso e políticas de privacidade.
                         </div>
                     </div>
+
                     <div>
                         <button id="enviar" type="submit">Enviar</button>
                     </div>
