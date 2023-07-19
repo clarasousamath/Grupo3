@@ -84,6 +84,15 @@ Contém opção de login com base no e-mail e senha do usuário.
 
 Opções de contato com os autores do projeto e políticas de uso e privacidade.
 
+#### Modelagem Entidade-Relacional
+
+![Diagrama ER](docs/diagrama-er-raizes-da-cura.svg)
+
+* Usuário: entidade responsável pelas credenciais de acesso à plataforma;
+* Artigo: entendidade representando o conteúdo inserido pelos usuários na plataforma;
+* Local: entidade representando os locais de atendimento parceiros da plataforma;
+* Profissional: entidade representando os profissionais parceiros da plataforma.
+
 ## Agradecimentos
 
 * Proz Tecnologia;
