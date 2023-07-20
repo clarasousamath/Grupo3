@@ -62,7 +62,7 @@ CREATE TABLE local_telefone (
 
 CREATE TABLE profissional (
     registro VARCHAR(128) NOT NULL PRIMARY KEY,
-    especialidade VARCHAR(50) NOT NULL,
+    id_especialidade INT NOT NULL,
     email VARCHAR(128) NOT NULL,
     nome VARCHAR(128) NOT NULL,
     sobrenome VARCHAR(256) NOT NULL,
@@ -73,7 +73,10 @@ CREATE TABLE profissional (
         REFERENCES usuario(email),
     CONSTRAINT fk_id_local
         FOREIGN KEY (id_local)
-        REFERENCES local(id)
+        REFERENCES local(id),
+    CONSTRAINT fk_id_especialidade
+        FOREIGN KEY (id_especialidade)
+        REFERENCES especialidade(id)
 );
 
 CREATE TABLE profissional_telefone (
@@ -85,4 +88,7 @@ CREATE TABLE profissional_telefone (
         REFERENCES profissional(registro)
 );
 
-
+CREATE TABLE especialidade (
+    id SERIAL NOT NULL PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL
+);
