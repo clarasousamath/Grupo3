@@ -60,13 +60,18 @@ CREATE TABLE local_telefone (
         REFERENCES local(id)
 );
 
+CREATE TABLE especialidade (
+    id SERIAL NOT NULL PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL
+);
+
 CREATE TABLE profissional (
     registro VARCHAR(128) NOT NULL PRIMARY KEY,
     id_especialidade INT NOT NULL,
     email VARCHAR(128) NOT NULL,
     nome VARCHAR(128) NOT NULL,
     sobrenome VARCHAR(256) NOT NULL,
-    email_usuario VARCHAR(128) NOT NULL UNIQUE,
+    email_usuario VARCHAR(128) UNIQUE,
     id_local INT NOT NULL,
     CONSTRAINT fk_email_usuario
         FOREIGN KEY (email_usuario)
@@ -88,7 +93,49 @@ CREATE TABLE profissional_telefone (
         REFERENCES profissional(registro)
 );
 
-CREATE TABLE especialidade (
-    id SERIAL NOT NULL PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL
-);
+INSERT INTO usuario (email, senha, perfil, bio, nome, sobrenome) 
+VALUES ('maria-do-bairro@teste.com', '123456', 'Preciso de ajuda', 'Sou uma pessoa muito extrovertida, tenho um cachorro...', 'Maria', 'do Bairro'),
+('paulina-martins@teste.com', '987654', 'Preciso de ajuda', 'Nasci no litoral e fui criada numa comunidade de pescadores...', 'Paulina', 'Martins'),
+('carlos_daniel@teste.com', '111111', 'Quero ajudar pessoas', 'Sou formado em Direito, viúvo, com dois filhos, ...', 'Carlos', 'Daniel'),
+('paola-bracho@teste.com', '333333', 'Sou um profissional da área', 'Gosto de viagens e baladas, estudei psicologia e fiz intercâmbio na ...', 'Paola', 'Bracho');
+
+
+INSERT INTO usuario_telefone (email_usuario, telefone)
+VALUES ('maria-do-bairro@teste.com', '(00) 11111-1111'),
+('paulina-martins@teste.com', '(00) 22222-2222'),
+('carlos_daniel@teste.com', '(00) 33333-3333'),
+('paola-bracho@teste.com', '(00) 44444-4444');
+
+INSERT INTO artigo (titulo, subtitulo, email_usuario)
+VALUES ('Depressão?', 'Entenda porquê', 'paola-bracho@teste.com'),
+('Técnicas de Meditação', 'Meditando com música', 'paola-bracho@teste.com'),
+('Outras Técnicas', 'Artes manuais como terapia', 'paola-bracho@teste.com');
+
+INSERT INTO artigo_conteudo (titulo_artigo, conteudo)
+VALUES ('Depressão?', 'A depressão é uma...'),
+('Técnicas de Meditação', 'Respirar muitas vezes ajuda...'),
+('Outras Técnicas', 'Você pode criar máscaras de papel...');
+
+INSERT INTO local (nome, website, logradouro, numero, bairro, cidade, uf)
+VALUES ('caps I', 'www.caps1.com.br', 'Rua do Caps', '1', 'Bairro dos CAPs', 'Exemplo', 'EX'),
+('caps II', 'www.caps2.com.br', 'Rua do Caps', '2', 'Bairro dos CAPs', 'Exemplo', 'EX'),
+('caps III', 'www.caps3.com.br', 'Rua do Caps', '3', 'Bairro dos CAPs', 'Exemplo', 'EX');
+
+INSERT INTO local_telefone (id_local, telefone)
+VALUES (1, '(99) 00000-0000'),
+(2, '(88) 00000-0000'),
+(3, '(77) 00000-0000');
+
+INSERT INTO especialidade (nome)
+VALUES ('Terapia Cognitiva'),
+('Terapia Comportamental'),
+('Terapia Infantil');
+
+INSERT INTO profissional (registro, id_especialidade, email, nome, sobrenome, email_usuario, id_local)
+VALUES ('CIP-00000', 1, 'paola-bracho@teste.com', 'Paola', 'Bracho', 'paola-bracho@teste.com', 1),
+('CIP-99999', 2, 'carlos_daniel@teste.com','Carlos', 'Daniel', 'carlos_daniel@teste.com', 3);
+
+INSERT INTO profissional_telefone (registro_profissional, telefone)
+VALUES ('CIP-00000', '(00) 88888-8888'),
+('CIP-99999', '(00) 88889-8889');
+
