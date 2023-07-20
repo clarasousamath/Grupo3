@@ -24,7 +24,11 @@ CREATE TABLE usuario_telefone (
 CREATE TABLE artigo (
     titulo VARCHAR(128) NOT NULL PRIMARY KEY,
     subtitulo VARCHAR(256),
-    data_publicacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    data_publicacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    email_usuario VARCHAR(128) NOT NULL,
+    CONSTRAINT fk_email_usuario
+        FOREIGN KEY (email_usuario)
+        REFERENCES usuario(email)
 );
 
 CREATE TABLE artigo_conteudo (
@@ -61,7 +65,15 @@ CREATE TABLE profissional (
     especialidade VARCHAR(50) NOT NULL,
     email VARCHAR(128) NOT NULL,
     nome VARCHAR(128) NOT NULL,
-    sobrenome VARCHAR(256) NOT NULL
+    sobrenome VARCHAR(256) NOT NULL,
+    email_usuario VARCHAR(128) NOT NULL UNIQUE,
+    id_local INT NOT NULL,
+    CONSTRAINT fk_email_usuario
+        FOREIGN KEY (email_usuario)
+        REFERENCES usuario(email),
+    CONSTRAINT fk_id_local
+        FOREIGN KEY (id_local)
+        REFERENCES local(id)
 );
 
 CREATE TABLE profissional_telefone (
