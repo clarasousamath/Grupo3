@@ -133,9 +133,25 @@ VALUES ('Terapia Cognitiva'),
 
 INSERT INTO profissional (registro, id_especialidade, email, nome, sobrenome, email_usuario, id_local)
 VALUES ('CIP-00000', 1, 'paola-bracho@teste.com', 'Paola', 'Bracho', 'paola-bracho@teste.com', 1),
-('CIP-99999', 2, 'carlos_daniel@teste.com','Carlos', 'Daniel', 'carlos_daniel@teste.com', 3);
+('CIP-99999', 2, 'carlos_daniel@teste.com','Carlos', 'Daniel', null, 3);
 
 INSERT INTO profissional_telefone (registro_profissional, telefone)
 VALUES ('CIP-00000', '(00) 88888-8888'),
 ('CIP-99999', '(00) 88889-8889');
 
+
+-- Esta consulta retorna somente os profissionais que têm associação com usuário
+SELECT u.bio, p.nome
+FROM usuario AS u
+  JOIN profissional AS p ON (u.email = p.email_usuario)
+;
+
+-- Esta consulta lista todos os títulos dos artigos e os usuários que os criou
+SELECT u.nome, a.titulo
+FROM usuario AS u
+  JOIN artigo AS a ON (u.email = a.email_usuario);
+
+-- Esta consulta lista os profissionais e seus locais de atendimento 
+SELECT p.nome, l.nome, l.uf
+FROM profissional AS p
+  JOIN local AS l ON (p.id_local = l.id);
