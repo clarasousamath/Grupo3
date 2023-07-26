@@ -28,11 +28,12 @@ body {
     z-index: 2;
 }
 
-#h1-sobre {
+.titulo {
     font-size: 26px;
     color: #004AAD;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .sessao-sobre p {
@@ -42,7 +43,92 @@ body {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1024px){
+.desenvolvedores {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.desenvolvedores h1.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.desenvolvedores .titulo-linha::after {
+    background-color: #ef0189;
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+
+.desenvolvedores article {
+    display: flex;
+    gap: 40px;
+    background-color: #e0f5fd;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px #00000048;
+}
+
+.desenvolvedores article figure {
+    flex: 2;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.desenvolvedores article div {
+    flex: 5;
+    align-self: center;
+}
+
+.desenvolvedores article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.desenvolvedores figcaption {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.desenvolvedores article img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: auto;
+    box-shadow: 2px 4px 4px #7a7a7a6b;
+}
+
+.desenvolvedores em {
+    font-style: italic;
+}
+
+.desenvolvedores div p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 40px;
+    line-height: 22px;
+}
+
+.desenvolvedores .citacao {
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 1024px) {
     .sessao-sobre {
         flex-direction: column;
         gap: 30px;
