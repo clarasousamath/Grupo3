@@ -127,6 +127,49 @@ body {
     font-style: italic;
 }
 
+.desenvolvedores .implementações-futuras {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 22px;
+}
+
+.desenvolvedores .tabela-imagem {
+   display: flex;
+}
+
+.desenvolvedores table {
+    flex: 4;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.desenvolvedores th {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    color: #FEFEFE;
+    background-color: #ef0189;
+    text-align: center;
+}
+
+table th, table td {
+    background-color: #fefefefa;
+    padding: 10px;
+    width: 50%;
+    box-shadow: 2px 4px 4px #696969c0;
+}
+
+.desenvolvedores .quebra-cabeça {
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 4px 4px #696969c0;
+}
 
 @media screen and (max-width: 1024px) {
     .sessao-sobre {
