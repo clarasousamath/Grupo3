@@ -147,12 +147,12 @@ body {
 }
 
 .desenvolvedores .tabela-imagem {
-   display: flex;
+    display: flex;
 }
 
 .desenvolvedores table {
     flex: 4;
-    text-align: center; 
+    text-align: center;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 2px 4px 4px #696969c0;
@@ -170,7 +170,8 @@ body {
     text-align: center;
 }
 
-table th, table td {
+table th,
+table td {
     background-color: #fefefefa;
     padding: 0 10px;
     width: 50%;
@@ -186,12 +187,22 @@ table th, table td {
     box-shadow: 2px 4px 4px #696969c0;
 }
 
-/* responsividade */ 
+/* responsividade */
 
 @media screen and (max-width: 400px) {
+
+    .desenvolvedores {
+        width: 80%;
+        justify-content: center;
+    }
+
+    article {
+        width: 80%;
+    }
+
     .desenvolvedores article figure img {
-       width: 100px;
-       height: 100px;
+        width: 100px;
+        height: 100px;
     }
 
     .titulo {
@@ -203,14 +214,25 @@ table th, table td {
         font-size: 13px;
     }
 
-    #tabelaresponsiva {
+    div#tabelaresponsiva {
         overflow-x: auto;
+        /* width: 50vw; */
+        align-items: center;
+    }
+
+    .desenvolvedores .quebra-cabeça {
         width: 50%;
+        height: 50%;
+    }
+
+    table th, table td {
+        padding: 20px 10px;
+        font-size: 12px;
     }
 }
 
 @media screen and (min-width: 400px) and (max-width: 700px) {
-    .desenvolvedores table {    
+    .desenvolvedores table {
         width: 50%;
         flex-direction: column;
         align-items: center;
@@ -221,8 +243,10 @@ table th, table td {
         font-size: 13px;
     }
 
-    #tabelaresponsiva {
+    div#tabelaresponsiva {
         overflow-x: auto;
+        /* width: 50vw; */
+        text-align: center;
     }
 }
 
@@ -243,6 +267,8 @@ table th, table td {
     .desenvolvedores article:nth-child(odd) {
         display: flex;
         flex-direction: column;
+        padding: 15px 25px;
+        gap: 0;
     }
 
     .desenvolvedores .tabela-imagem {
