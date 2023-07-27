@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     width: 70%;
     margin: auto;
-    gap: 50px;
+    gap: 40px;
     margin-bottom: 50px;
 }
 
@@ -87,7 +87,7 @@ body {
     gap: 10px;
 }
 
-.desenvolvedores article div {
+.desenvolvedores article .descricao-desenvolvedor {
     flex: 5;
     align-self: center;
 }
@@ -103,7 +103,7 @@ body {
     font-size: 18px;
 }
 
-.desenvolvedores article img {
+.desenvolvedores article figure img {
     border-radius: 50%;
     width: 250px;
     height: 250px;
@@ -118,7 +118,8 @@ body {
 
 .desenvolvedores div p {
     text-align: justify;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
     text-indent: 40px;
     line-height: 22px;
 }
@@ -127,12 +128,22 @@ body {
     font-style: italic;
 }
 
+.desenvolvedores article span .redes-desenvolvedores {
+    display: block;
+    text-align: right;
+}
+
+.desenvolvedores .redes-desenvolvedores img {
+    width: 8%;
+}
+
 .desenvolvedores .implementações-futuras {
     display: flex;
     flex-direction: column;
     text-align: justify;
     text-indent: 40px;
     line-height: 22px;
+    padding: 30px;
 }
 
 .desenvolvedores .tabela-imagem {
@@ -141,10 +152,12 @@ body {
 
 .desenvolvedores table {
     flex: 4;
-    text-align: center;
-    padding: 10px;
+    text-align: center; 
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 2px 4px 4px #696969c0;
+    border-collapse: collapse;
+    border-style: hidden;
 }
 
 
@@ -159,9 +172,11 @@ body {
 
 table th, table td {
     background-color: #fefefefa;
-    padding: 10px;
+    padding: 0 10px;
     width: 50%;
     box-shadow: 2px 4px 4px #696969c0;
+    vertical-align: middle;
+    border: 1px solid #696969c0;
 }
 
 .desenvolvedores .quebra-cabeça {
