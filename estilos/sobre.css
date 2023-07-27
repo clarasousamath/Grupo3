@@ -134,7 +134,7 @@ body {
 }
 
 .desenvolvedores .redes-desenvolvedores img {
-    width: 8%;
+    width: 10%;
 }
 
 .desenvolvedores .implementações-futuras {
@@ -186,7 +186,48 @@ table th, table td {
     box-shadow: 2px 4px 4px #696969c0;
 }
 
+/* responsividade */ 
+
+@media screen and (max-width: 400px) {
+    .desenvolvedores article figure img {
+       width: 100px;
+       height: 100px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .desenvolvedores div p,
+    .sessao-sobre p {
+        font-size: 13px;
+    }
+
+    #tabelaresponsiva {
+        overflow-x: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .desenvolvedores table {    
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desenvolvedores th {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    #tabelaresponsiva {
+        overflow-x: auto;
+    }
+}
+
 @media screen and (max-width: 1024px) {
+
     .sessao-sobre {
         flex-direction: column;
         gap: 30px;
@@ -197,4 +238,16 @@ table th, table td {
         width: 40%;
         margin: auto;
     }
+
+    .desenvolvedores article,
+    .desenvolvedores article:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desenvolvedores .tabela-imagem {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
 }
